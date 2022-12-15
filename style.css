@@ -38,7 +38,8 @@ a {
 
 img {
   display: inline-block;
-  width: 100%;
+  width: 70%;
+  height: 100%;
 }
 
 li {
@@ -346,7 +347,8 @@ h4 {
   }
 
   .hero-image img {
-    width: 60%;
+    width: 50%;
+    height: 100%;
   }
 
   .hero-image .hero-img-overlay {

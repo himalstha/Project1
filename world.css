@@ -6,8 +6,9 @@
 }
 .wrapper{
     position: relative;
+    top: ;
     left: 50%;
-    transform: translate(-50%,60%);
+    transform: translate(-50%,50%);
   background: #fff;
   border-radius: 15px;
   padding: 25px;
@@ -18,6 +19,12 @@
 body img{
     height: 100px;
     width: 150px;
+}
+h2{
+  font-size: 50px;
+}
+.margin-top{
+  margin-top: 5%;
 }
 .wrapper header{
   font-size: 22px;
@@ -117,11 +124,41 @@ input[type="radio"],
 input[type="checkbox"]{
   display: none;
 }
-@media (max-width: 880px) {
+@media (max-width: 670px) {
   body img{
     position: relative;
     height: 80px;
     width: 120px;
   }
+  .margin-top{
+    margin-top: 10%;
+  }
+  h2{
+    font-size: 30px;
+  }
 
+}
+@media (max-width: 600px) {
+  .margin-top{
+    margin-top: 27%;
+  }
+
+}
+@media (max-width:440px){
+  .margin-top{
+    margin-top: 50%;
+  }
+}
+@media (max-width:370px){
+  body img{
+    height: 60px;
+    width: 80px;
+    padding: 0 0;
+  }
+  .h1{
+    font-size: 50px;
+  }
+  h2{
+    font-size: 20px;
+  }
 }

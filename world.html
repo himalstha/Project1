@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Himal World Cup</title>
+    <link rel="shortcut icon" type="x-icon" href="./img/icon.png">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="world.css">
     <link rel="stylesheet" href="footer.css">
@@ -15,7 +16,7 @@
       <nav class="navbar">
         <ul class="navbar-list">
           <li><a href="index.html" class="navbar-link"> Home </a></li>
-          <li><a href="#" class="navbar-link"> Games </a></li>
+          <li><a href="game.html" class="navbar-link"> Games </a></li>
           <li><a href="#" class="navbar-link"> Notes </a></li>
           <li><a href="#" class="navbar-link"> Exercise </a></li>
           <li><a href="#" class="navbar-link"> Library </a></li>
@@ -23,7 +24,7 @@
           <li><a href="#" class="navbar-link"> News </a></li>
           <li><a href="#" class="navbar-link"> Contact </a></li>
           <li><a href="#" class="navbar-link"> Sign In </a></li>
-          <li><a href="#" class="btn navbar-btn">Sign In</a></li>
+          <li><a href="#" class="btn navbar-btn">Sign Up</a></li>
         </ul>
       </nav>
       <!-- subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical -->
@@ -35,13 +36,13 @@
 
 <!---------------world cup-------------------->
 
-    <h1 class="primary-heading" align="center"><a href="world.html">Quatar World Cup 2022 <br>Final Prediction</a></h1>
+    <h1 class="primary-heading h1" align="center"><a href="#">Quatar World Cup 2022 <br>Final Prediction</a></h1>
 
 
 
     <main>
       <section class="section">
-<div class="center-container grid grid-three-column">
+<div class="center-container grid grid-three-column margin-top">
     <img src="https://th.bing.com/th/id/R.26714ad19fa204c70e4166145c811772?rik=Hhh%2bCVC4HUyIDw&pid=ImgRaw&r=0">
     <h2>Vs</h2>
     <img src="https://th.bing.com/th/id/R.c4e00b35fd2345361d3e9943ff17e9da?rik=0V7L2c6VBD2xJA&riu=http%3a%2f%2fwww.freepngimg.com%2fdownload%2ffrance%2f10-2-france-flag-picture.png&ehk=kraZsgsgegLrUyUGiCQnOdaDsdFvXJ1%2fLPcDTCxiZRM%3d&risl=&pid=ImgRaw&r=0">
@@ -77,7 +78,18 @@
 </section>
 </main>
 
- <script src="script.js"></script>
+ <script>
+  const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  // alert("hi");
+  nav_header.classList.toggle("active");
+};
+
+//  subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical
+mobile_nav.addEventListener("click", () => toggleNavbar());
+ </script>
     
     <script
       type="module"
