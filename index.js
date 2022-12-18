@@ -8,3 +8,9 @@ const toggleNavbar = () => {
 
 //  subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical
 mobile_nav.addEventListener("click", () => toggleNavbar());
+
+var loder = document.getElementById("preloder");
+window.addEventListener("load", function () {
+  loder.style.display = "none";
+})
+

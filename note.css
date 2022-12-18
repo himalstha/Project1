@@ -13,7 +13,7 @@
     flex-wrap: wrap;
 }
 .note{
-    width: 310px;
+    width: 270px;
     margin-right: 10px;
     margin-bottom: 30px;
     transition: all 0.3s linear;
@@ -27,14 +27,23 @@
     }
 
 .note-thumbail{
-    width: 100%;
+    position: relative;
+    width: 270px;
     height: 170px;
-
 }
+
 .note-thumbail img{
-    object-fit: cover;
+    border-radius: 15px;
+    object-fit:cover;
     height: 100%;
     width: 100%;
+    transition: all 0.3s linear;
+}
+.note-thumbail img:hover,
+.note-thumbail img:active{
+    border: 1px solid rgba(0, 255, 251, 0.638);
+    filter: brightness(90%);
+
 }
 
 .author img{

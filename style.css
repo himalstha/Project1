@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nerko+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
-}@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
 
 * {
   margin: 0;
@@ -12,6 +6,16 @@
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
 html {
   font-size: 62.5%;
   /* 1rem = 10px */
@@ -74,9 +78,9 @@ h4 {
   position: relative;
 }
 
-.logo {
-  font-size: 2rem;
-  font-weight: bold;
+.header img {
+  height: 100%;
+  width: 300px;
 }
 
 .navbar {
@@ -130,14 +134,14 @@ h4 {
 }
 
 
-.docked-btns {
+.docked-btns-calculator {
   position: fixed;
   top: 36%;
   right: 2px;
   z-index: 9;
 }
 
-.docked-btns .register {
+.docked-btns-calculator .register {
   display: inline-block;
   padding: 10px 25px;
   margin: 0 10px;
@@ -148,19 +152,81 @@ h4 {
   color: #fff;
   font-weight: bold;
   border-radius: 20px;
-  
+
   transition: all 0.3s ease-in-out;
 }
-.docked-btns .register ion-icon{
+
+.docked-btns-calculator .register ion-icon {
   transform: scale(1.7);
 }
 
-.docked-btns :hover,
-.docked-btns :active {
+.docked-btns-calculator :hover,
+.docked-btns-calculator :active {
   background-color: var(--para-color);
   transform: scale(1.05);
 
 }
+
+.docked-btns-todolist {
+  position: fixed;
+  top: 42%;
+  right: 2px;
+  z-index: 9;
+}
+
+.docked-btns-todolist .register {
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0 10px;
+  border-radius: 3px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background-color: var(--helper-color);
+  color: #fff;
+  font-weight: bold;
+  border-radius: 20px;
+  border-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.docked-btns-todolist :hover,
+.docked-btns-todolist :active {
+  background-color: var(--para-color);
+  transform: scale(1.05);
+}
+
+.docked-btns-todolist-iframe {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9;
+  display: none;
+}
+
+.docked-btns-todolist-iframe-close {
+  position: absolute;
+  top: 20%;
+  left: 58%;
+  transform: translate(-50%, -50%);
+  z-index: 20;
+  display: none;
+}
+
+.docked-btns-todolist-iframe-close button {
+  cursor: pointer;
+  background-color: transparent;
+  font-size: 20px;
+  color: rgba(255, 42, 0, 0.723);
+  border: none;
+}
+
+.docked-btns-todolist-iframe-close button:hover {
+  color: rgba(255, 30, 0, 0.941);
+}
+
 
 
 
@@ -168,15 +234,17 @@ h4 {
 .section {
   padding: 9.6rem 0;
 }
-.center-container{
-    
-  
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+
+.center-container {
+
+
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 }
+
 .container {
   max-width: 130rem;
   margin: 0 auto;
@@ -191,9 +259,10 @@ h4 {
 .grid-two-column {
   grid-template-columns: repeat(2, 1fr);
 }
+
 .grid-three-column {
-    grid-template-columns: repeat(3, 1fr);
-  }
+  grid-template-columns: repeat(3, 1fr);
+}
 
 .btn {
   font-size: 1.6rem;
@@ -208,6 +277,16 @@ h4 {
 .btn:hover,
 .btn:active {
   transform: scale(1.05);
+}
+
+/*-------------------conatiner--------------------*/
+.main-container {
+  background-color: rgb(229, 237, 237);
+  width: 100%;
+  height: 100%;
+  padding: 15px 25px;
+  border-top: 1px solid #ddd;
+  overflow-y: scroll;
 }
 
 /*--------------------------------
@@ -296,19 +375,48 @@ h4 {
   margin: 0;
 }
 
+#preloder {
+  background: rgba(255, 255, 255, 0.608) url(./img/loder.gif) no-repeat center center;
+  background-size: 30%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
 /*--------------------------------
   media queries style start 
   <!-- subscribe to thapa technical Channle plz 
  link:https://www.youtube.com/thapatechnical -->
 ------------------------- */
 
+
+
+
 @media (max-width: 1250px) {
   .container {
     padding: 0 6rem;
   }
+
   html {
     font-size: 56.25%;
   }
+}
+
+@media (max-width: 1162px) {
+  .header img {
+    width: 150px;
+
+  }
+
+}
+
+@media (max-width: 980px) {
+  .header img {
+    width: 300px;
+
+  }
+
 }
 
 @media (max-width: 980px) {
@@ -372,6 +480,7 @@ h4 {
     display: block;
     color: var(--white);
   }
+
   .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
     display: none;
     color: var(--white);
@@ -396,9 +505,11 @@ h4 {
   .container {
     max-width: 720px;
   }
+
   .hero-image img {
     width: 80%;
   }
+
   .hero-image .hero-img-overlay {
     width: 90%;
     left: 0;

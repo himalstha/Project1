@@ -1,255 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Himal shrestha</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" type="x-icon" href="./img/icon.png">
-    <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="note.css" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9466406569025315"
-     crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header class="header">
-      <a href="index.html" target="_blank" class="logo">himalstha.com.np</a>
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li><a href="index.html" class="navbar-link"> Home </a></li>
-          <li><a href="game.html" class="navbar-link"> Games </a></li>
-          <li><a href="notes.html" class="navbar-link"> Notes </a></li>
-          <li><a href="#" class="navbar-link"> Exercise </a></li>
-          <li><a href="#" class="navbar-link"> Library </a></li>
-          <li><a href="#" class="navbar-link"> Blogs </a></li>
-          <li><a href="#" class="navbar-link"> News</a></li>
-          <li><a href="contact.html" class="navbar-link"> Contact </a></li>
-          <li><a href="#" class="navbar-link"> Sign In </a></li>
-          <li><a href="#" class="btn navbar-btn">Sign Up</a></li>
-        </ul>
-      </nav>
-      <!-- subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical -->
-      <div class="mobile-navbar-btn">
-        <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
-        <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
-      </div>
-    </header>
 
-<!---------------world cup-------------------->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Himal shrestha</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" type="x-icon" href="./img/icon.png">
+  <link rel="stylesheet" href="footer.css" />
+  <link rel="stylesheet" href="note.css" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9466406569025315"
+    crossorigin="anonymous"></script>
+</head>
 
-    <h1 class="primary-heading" align="center"><a href="world.html">World Cup season</a></h1>
-<!------calculator-->
-<div class="docked-btns">
-  <a href="calculator.html" class="register" target="_blank">
-    Use <ion-icon name="calculator"></ion-icon>
-  </a>
-</div>
-<!---------ended-->
+<body>
 
 
-<!---content started-->
+  <!---------------------------------------loader-->
+  <div id="preloder"></div>
+  <!-------------------------------loader ended-->
 
-<div class="notes">
-  
 
-  <div class="notes-container">
+  <header class="header">
+    <a href="index.html" target="_blank" class="logo"><img src="./img/logo.gif"></a>
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="index.html" class="navbar-link"> Home </a></li>
+        <li><a href="game.html" class="navbar-link"> Games </a></li>
+        <li><a href="notes.html" class="navbar-link"> Notes </a></li>
+        <li><a href="exercise.html" class="navbar-link"> Exercise </a></li>
+        <li><a href="library.html" class="navbar-link"> Library </a></li>
+        <li><a href="news.html" class="navbar-link"> News </a></li>
+        <li><a href="contact.html" class="navbar-link"> Contact </a></li>
+        <li><a href="signin.html" class="navbar-link"> Sign In </a></li>
+        <li><a href="signup.html" class="btn navbar-btn">Sign Up</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-navbar-btn">
+      <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+      <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+    </div>
+  </header>
 
-    <a href="practise.html">
-    <div class="note">
-      <div class="note-thumbail">
-          <img src="https://edpsyched.com/wp-content/uploads/2014/12/Final-Exam.jpg">
-      </div>
-      <div class="note-details">
-          <div class="author">
-              <img src="./img/profile.jpg" alt="">
+
+  <!------calculator-->
+  <div class="docked-btns-calculator">
+    <a href="calculator.html" class="register" target="_blank">
+      Use <ion-icon name="calculator"></ion-icon>
+    </a>
+  </div>
+  <!---------ended-->
+
+
+  <!---------------------------to do list-->
+  <div class="docked-btns-todolist">
+    <button class="register"
+      onclick="document.getElementById('todolist').style.display='block'; document.getElementById('closeTodolist').style.display='block';">
+      TO DO LIST</button>
+  </div>
+
+  <div class="docked-btns-todolist-iframe-close" id="closeTodolist">
+    <div class=" close-icon"><button
+        onclick="document.getElementById('todolist').style.display='none'; document.getElementById('closeTodolist').style.display='none';">
+        -<ion-icon name="close"></ion-icon></button></a></div>
+  </div>
+  <div class="docked-btns-todolist-iframe" id="todolist">
+    <a class="register" target="_blank">
+      <iframe id="todolist" src="todolist.html" width="350" height="500" frameborder="0"></iframe>
+    </a>
+  </div>
+
+  <!---------------------------ended-->
+
+
+
+  <!---content started-->
+
+  <div class="notes">
+
+
+    <div class="notes-container">
+
+      <a href="practise.html">
+        <div class="note">
+          <div class="note-thumbail">
+            <img src="https://edpsyched.com/wp-content/uploads/2014/12/Final-Exam.jpg">
           </div>
+          <div class="note-details">
+            <div class="author">
+              <img src="./img/profile.jpg" alt="">
+            </div>
 
-          <div class="title">
+            <div class="title">
               <h3> 12-NEB Practise questions</h3>
               <a href="#">Himal shrestha</a>
               <span>20.6k views - 1 days ago</span>
+            </div>
           </div>
-      </div>
-    </div>
-    </a>
-      
-     <a href="game.html">
-      <div class="note">
-          <div class="note-thumbail">
-<img src="https://th.bing.com/th/id/OIP.IzVzQa23c7qw_2TfiSOXRwHaFL?pid=ImgDet&rs=1"> 
-         </div>
-          <div class="note-details">
-              <div class="author">
-                  <img src="./img/profile.jpg" alt="">
-              </div>
-
-              <div class="title">
-                  <h3>Play Games</h3>
-                  <a href="#">Himal shrestha</a>
-                  <span>2.58k views - 6 days ago</span>
-              </div>
-          </div>
-      </div>
+        </div>
       </a>
 
-      
-      <div class="note">
-        <div class="note-thumbail">
-<img src="https://th.bing.com/th/id/OIP.6AuAhbYa37PxTuy-RQVyCwHaE8?pid=ImgDet&rs=1">
-        </div>
-        <div class="note-details">
+      <a href="game.html">
+        <div class="note">
+          <div class="note-thumbail">
+            <img src="https://th.bing.com/th/id/OIP.IzVzQa23c7qw_2TfiSOXRwHaFL?pid=ImgDet&rs=1">
+          </div>
+          <div class="note-details">
             <div class="author">
-                <img src="./img/profile.jpg" alt="">
+              <img src="./img/profile.jpg" alt="">
             </div>
 
             <div class="title">
-                <h3>See Notes</h3>
-                <a href="#">Himal shrestha</a>
-                <span>1.8k views - 4 days ago</span>
+              <h3>Play Games</h3>
+              <a href="#">Himal shrestha</a>
+              <span>2.58k views - 6 days ago</span>
             </div>
+          </div>
+        </div>
+      </a>
+
+
+      <div class="note">
+        <div class="note-thumbail">
+          <img src="https://th.bing.com/th/id/OIP.6AuAhbYa37PxTuy-RQVyCwHaE8?pid=ImgDet&rs=1">
+        </div>
+        <div class="note-details">
+          <div class="author">
+            <img src="./img/profile.jpg" alt="">
+          </div>
+
+          <div class="title">
+            <h3>See Notes</h3>
+            <a href="#">Himal shrestha</a>
+            <span>1.8k views - 4 days ago</span>
+          </div>
         </div>
       </div>
 
       <div class="note">
         <div class="note-thumbail">
-<img src="https://i2-prod.mirror.co.uk/incoming/article6549155.ece/ALTERNATES/s1200/Person-signing-paperwork.jpg">
+          <img
+            src="https://i2-prod.mirror.co.uk/incoming/article6549155.ece/ALTERNATES/s1200/Person-signing-paperwork.jpg">
         </div>
         <div class="note-details">
-            <div class="author">
-                <img src="./img/profile.jpg" alt="">
-            </div>
+          <div class="author">
+            <img src="./img/profile.jpg" alt="">
+          </div>
 
-            <div class="title">
-                <h3>DO exercises</h3>
-                <a href="#">Himal shrestha</a>
-                <span>2.5k views - 1 month ago</span>
-            </div>
+          <div class="title">
+            <h3>DO exercises</h3>
+            <a href="#">Himal shrestha</a>
+            <span>2.5k views - 1 month ago</span>
+          </div>
         </div>
       </div>
 
+    </div>
   </div>
-</div>
 
 
-    <main>
-      <section class="section section-hero">
-        <div class="container grid grid-two-column">
-          <div class="hero-data">
-            <h1 class="primary-heading">Enhance Your Potential</h1>
-            <p class="para">
-                “The art of reading and studying consists in remembering the essentials and forgetting what is not essential.”
-                ― Adolf Hitler, Mein Kampf
-            </p>
-            <a href="#" target="_blank" class="btn">Get Started</a>
+  <main>
+    <section class="section section-hero">
+      <div class="container grid grid-two-column">
+        <div class="hero-data">
+          <h1 class="primary-heading">Enhance Your Potential</h1>
+          <p class="para">
+            “The art of reading and studying consists in remembering the essentials and forgetting what is not
+            essential.”
+            ― Adolf Hitler, Mein Kampf
+          </p>
+          <a href="#" target="_blank" class="btn">Get Started</a>
 
-            <div class="hero-icons">
-              <div class="grid grid-two-column">
-                <div class="hero-icon-style">
-                    <ion-icon name="book" class="icon"></ion-icon> 
-                    <h2> Read</h2>                 
-                    <p class="para">
-                        “We read to know we're not alone.”
-                        ― William Nicholson, Shadowlands<br>
-                        “Read a thousand books, and your words will flow like a river.” ― Lisa See
-                  </p>
-                </div>
-                <div class="hero-icon-style">
-                    <ion-icon name="clipboard" class="icon"></ion-icon>                 
-                    <h2>Write</h2>
-                    <p class="para">
-                        "If there's a book that you want to read, but it hasn't been written yet, then you must write it." — Toni Morrison
-                  </p>
-                </div>
+          <div class="hero-icons">
+            <div class="grid grid-two-column">
+              <div class="hero-icon-style">
+                <ion-icon name="book" class="icon"></ion-icon>
+                <h2> Read</h2>
+                <p class="para">
+                  “We read to know we're not alone.”
+                  ― William Nicholson, Shadowlands<br>
+                  “Read a thousand books, and your words will flow like a river.” ― Lisa See
+                </p>
+              </div>
+              <div class="hero-icon-style">
+                <ion-icon name="clipboard" class="icon"></ion-icon>
+                <h2>Write</h2>
+                <p class="para">
+                  "If there's a book that you want to read, but it hasn't been written yet, then you must write it." —
+                  Toni Morrison
+                </p>
               </div>
             </div>
           </div>
-          <!-- right side hero section  -->
-          <div class="hero-image">
-            <img
-              src="img/i1.jpg"
-              class="image"
-            />
-            <div class="hero-img-overlay">
-              <p class="para">
-                Great things start from small beginnings.
-              </p>
-              <p class="para">Himal Shrestha</p>
-              <p class="para">Student </p>
-            </div>
+        </div>
+        <!-- right side hero section  -->
+        <div class="hero-image">
+          <img src="img/i1.jpg" class="image" />
+          <div class="hero-img-overlay">
+            <p class="para">
+              Great things start from small beginnings.
+            </p>
+            <p class="para">Himal Shrestha</p>
+            <p class="para">Student </p>
           </div>
         </div>
-      </section>
-    </main>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    >
-  </script>
-  
-    <script src="index.js"></script>
+      </div>
+    </section>
+  </main>
 
-    
-<!---footer--><section></section>
-<footer class="footer-distributed">
 
-  <div class="footer-left">
+  <!-----------footer-->
 
-    <h3>himalstha<span>.com.np</span></h3>
-    <p class="footer-links">
-      <a href="#" class="link-1">Home</a>
-      
-      <a href="#">Blog</a>
-    
-      <a href="#">Pricing</a>
-    
-      <a href="#">About</a>
-      
-      <a href="#">Faq</a>
-      
-      <a href="#">Contact</a>
-    </p>
-
-    <p class="footer-company-name">himalstha.com.np © 2022</p>
-  </div>
-
-  <div class="footer-center">
-
-    <div>
-      <i class="fa fa-map-marker"></i>
-      <p><span>Nepal</span> Kalankistan-14, Kathmandu</p>
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <h3>himalstha<span>.com.np</span></h3>
+      <p class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="game.html">Games</a>
+        <a href="notes.html">Notes</a>
+        <a href="exercise.html">Exercise</a>
+        <a href="contact.html">Contact</a>
+      </p>
+      <p class="footer-company-name">himalstha.com.np © 2022</p>
     </div>
-
-    <div>
-      <i class="fa fa-phone"></i>
-      <p>+977 9881219312</p>
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>Nepal</span> Kalankistan-14, Kathmandu</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+977 9881219312</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="mailto:admin@himalstha.com.np">admin@himalstha.com.np</a></p>
+      </div>
     </div>
-
-    <div>
-      <i class="fa fa-envelope"></i>
-      <p><a href="mailto:admin@himalstha.com.np">admin@himalstha.com.np</a></p>
+    <div class="footer-right">
+      <div class="footer-icons">
+        <a href="" onclick="window.open('http://www.facebook.com/share.php?u=' + 
+                encodeURIComponent(location.href))"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="http://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="http://www.pinterest.com/"><ion-icon name="logo-pinterest"></ion-icon></a>
+        <a href="http://www.call-outline.com/"><ion-icon name="call-outline"></ion-icon></i></a>
+      </div>
     </div>
+  </footer>
+  <!-----------footer ended-->
 
-  </div>
 
-  <div class="footer-right">
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-   
-    <div class="footer-icons">
 
-      <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
-      <a href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
-      <a href="#"><ion-icon name="call-outline"></ion-icon></i></a>
+  <script src="index.js"></script>
 
-    </div>
 
-  </div>
+</body>
 
-</footer>
-  </body>
 </html>
