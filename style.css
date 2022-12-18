@@ -207,11 +207,11 @@ h4 {
 }
 
 .docked-btns-todolist-iframe-close {
-  position: absolute;
+  position: fixed;
   top: 20%;
   left: 58%;
   transform: translate(-50%, -50%);
-  z-index: 20;
+  z-index: 10;
   display: none;
 }
 
@@ -394,6 +394,7 @@ h4 {
 
 
 @media (max-width: 1250px) {
+
   .container {
     padding: 0 6rem;
   }
@@ -420,6 +421,35 @@ h4 {
 }
 
 @media (max-width: 980px) {
+  .docked-btns-todolist .register {
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  .docked-btns-calculator .register {
+    padding: 8px 12px;
+    font-size: 12px;
+    font-weight: 100;
+  }
+
+  .docked-btns-calculator {
+    position: fixed;
+    top: 87%;
+    z-index: 9;
+  }
+
+  .docked-btns-todolist {
+    position: fixed;
+    top: 92%;
+    z-index: 9;
+  }
+
+  .docked-btns-todolist-iframe-close {
+    top: 17%;
+    left: 78%;
+  }
+
   .container {
     max-width: 96rem;
   }
