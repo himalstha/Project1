@@ -281,7 +281,8 @@ h4 {
 
 /*-------------------conatiner--------------------*/
 .main-container {
-  background-color: rgb(229, 237, 237);
+  display: flex;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
   padding: 15px 25px;
@@ -376,7 +377,7 @@ h4 {
 }
 
 #preloder {
-  background: rgba(255, 255, 255, 0.608) url(./img/loder.gif) no-repeat center center;
+  background: var(--bg-color) url(./img/loder.gif) no-repeat center center;
   background-size: 30%;
   height: 100vh;
   width: 100%;
@@ -384,116 +385,153 @@ h4 {
   z-index: 100;
 }
 
-.presentation-slide {
+.danger {
+  padding: 10px;
+  font-size: 15px;
+  background-color: #ffdddd;
+  border-left: 6px solid #f44336;
+}
 
-  background-color: rgb(229, 237, 237);
-  width: 100%;
+.popup-bg {
+  position: absolute;
   height: 100%;
-  padding: 15px 25px;
-  border-top: 1px solid #ddd;
-  overflow-y: scroll;
+  width: 100%;
+  background: rgba(0, 41, 45, 0.385);
+  z-index: 100;
+  display: none;
 }
 
-.presentation-slide-container {
-
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
+.popup {
+  background-color: var(--helper-color);
+  width: 50%;
+  height: 60%;
+  padding: 30px 40px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  font-size: large;
+  border-radius: 8px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 30;
 }
 
-
-
-
-
-
-/*
-
-
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.popup ion-icon {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  border-radius: 50%;
+  background-color: rgb(11, 255, 2);
 }
 
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
-  float: left;
+.popup button {
+  display: block;
+  margin: 0 0 20px auto;
+  background-color: transparent;
+  font-size: 30px;
+  color: #ffffff;
+  background: var(--primary-color);
+  border-radius: 100%;
+  bottom: 10%;
+  width: 40px;
+  height: 40px;
   border: none;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
-  transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
+.popup h2 {
+  margin-top: -20px;
 }
 
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+.popup p {
+  font-size: 14px;
+  text-align: justify;
+  margin: 20px 0;
+  line-height: 25px;
 }
 
-/* Style the tab content */
-.tabcontent {
-  display: none;
-  border: 0px solid #ccc;
-  border-top: none;
-  max-width: 100rem;
-  margin: 50px auto;
-}
-
-.tabcontent ul.question {
-  border: 1px solid black;
-  margin-top: 40px;
-  padding: 15px;
-}
-
-.tabcontent ul.question ul.ans {
-  border: 1px solid rgb(16, 148, 177);
-  padding: 10px;
-}
-
-.tabcontent ul li.question {
-  border: 1px solid #ddd;
-  padding: 5px;
-}
-
-
-.tabcontent h3 {
-  font-size: 15px;
-  padding-top: 5px;
-
-}
-
-.tabcontent h2 {
-  font-size: 18px;
+.popup a {
+  display: block;
+  width: 20%;
+  position: relative;
+  margin: 10px auto;
   text-align: center;
+  background-color: var(--primary-shades);
+  border-radius: 20px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 8px 0;
 }
 
-@media (max-width: 980px) {
-  .tabcontent {
-    max-width: 50rem;
-  }
+.sub-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  max-width: 900px;
+  justify-content: space-around;
+
 }
 
-@media (max-width: 500px) {
-  .tabcontent {
-    max-width: 40rem;
-  }
+.post-container {
+  height: 300px;
+  width: 250px;
+  flex-direction: row;
+  text-align: center;
+  margin: 10px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.374);
+  transition: all 0.3s linear;
+  background-color: var(--helper-color);
 }
 
-@media (max-width: 400px) {
-  .tabcontent h3 {
-    font-size: 12px;
-  }
+.post-container:hover,
+.post-container:active {
+  transform: scale(1.08);
 }
 
-*/
+.post-container img {
+  object-fit: cover;
+  height: 80%;
+  width: 100%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+
+}
+
+.post-container h2 {
+  color: var(--primary-shades);
+  padding: 5px;
+  font-size: large;
+
+}
+
+.post-container p {
+  color: var(--primary-color);
+  font-size: 12px;
+}
+
+.text-container {
+  max-width: 900px;
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+  color: darkblue;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.pdf-iframe {
+  size: cover;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /*--------------------------------
   media queries style start 
   <!-- subscribe to thapa technical Channle plz 
@@ -524,7 +562,7 @@ h4 {
 
 @media (max-width: 980px) {
   .header img {
-    width: 300px;
+    width: 210px;
 
   }
 
@@ -532,13 +570,13 @@ h4 {
 
 @media (max-width: 980px) {
 
-  .presentation-slide-container {
-    justify-content: start;
+
+  .popup {
+    width: 95%;
+    font-size: 10px;
   }
 
-  .presentation-slide-container img {
-    width: 100%;
-  }
+  .popup .btn {}
 
   .docked-btns-todolist .register {
     padding: 8px 12px;
