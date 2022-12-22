@@ -1,0 +1,29 @@
+ /** 1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY**/
+
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    int n,s=0,i,j;
+    printf("How many number do you want to print:\n");
+    scanf("%d",&n);
+    int a[n];
+    for (i=1; i<=n; i++){
+        printf("Enter %d position number:",i);
+        scanf("%d",&a[i]);
+    }
+    for (i=1; i<=n; i++){
+        for (j=i+1; j<=n; j++){
+            if (a[i]>a[j]){
+                s=a[i];
+                a[i]=a[j];
+                a[j]=s;
+            }
+        }
+    }
+    for(i=1; i<=n; i++){
+        printf("%d \t",a[i]);
+    }
+    getch ();
+}
