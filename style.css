@@ -75,7 +75,6 @@ h4 {
   justify-content: space-between;
   align-items: center;
   padding: 0 5.4rem;
-  position: relative;
 }
 
 .header img {
@@ -84,8 +83,10 @@ h4 {
 }
 
 .navbar {
+  right: 0;
   display: flex;
   align-items: center;
+  right: 0;
 }
 
 .navbar-list {
@@ -132,6 +133,7 @@ h4 {
 .mobile-nav-icon[name="close"] {
   display: none;
 }
+
 
 
 .docked-btns-calculator {
@@ -290,6 +292,14 @@ h4 {
   overflow-y: scroll;
 }
 
+.main-container a {
+  padding: 0 10px 10px 0;
+}
+
+.main-container a:hover {
+  text-decoration: underline;
+}
+
 /*--------------------------------
  hero section style start 
  <!-- subscribe to thapa technical Channle plz 
@@ -392,77 +402,7 @@ h4 {
   border-left: 6px solid #f44336;
 }
 
-.popup-bg {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 41, 45, 0.385);
-  z-index: 100;
-  display: none;
-}
 
-.popup {
-  background-color: var(--helper-color);
-  width: 50%;
-  height: 60%;
-  padding: 30px 40px;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  font-size: large;
-  border-radius: 8px;
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  z-index: 30;
-}
-
-.popup ion-icon {
-  color: rgb(255, 255, 255);
-  font-size: 50px;
-  border-radius: 50%;
-  background-color: rgb(11, 255, 2);
-}
-
-.popup button {
-  display: block;
-  margin: 0 0 20px auto;
-  background-color: transparent;
-  font-size: 30px;
-  color: #ffffff;
-  background: var(--primary-color);
-  border-radius: 100%;
-  bottom: 10%;
-  width: 40px;
-  height: 40px;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
-
-.popup h2 {
-  margin-top: -20px;
-}
-
-.popup p {
-  font-size: 14px;
-  text-align: justify;
-  margin: 20px 0;
-  line-height: 25px;
-}
-
-.popup a {
-  display: block;
-  width: 20%;
-  position: relative;
-  margin: 10px auto;
-  text-align: center;
-  background-color: var(--primary-shades);
-  border-radius: 20px;
-  color: #ffffff;
-  text-decoration: none;
-  padding: 8px 0;
-}
 
 .sub-container {
   width: 100%;
@@ -518,7 +458,7 @@ h4 {
   padding: 10px;
   height: 100%;
   width: 100%;
-  color: darkblue;
+  color: var(--primary-shades);
   font-weight: 500;
   font-size: 15px;
 }
@@ -593,6 +533,53 @@ h4 {
   border-right: 1px solid var(--primary-color);
 }
 
+/*form----------------------------form*/
+#contact-form {
+  width: 40%;
+  margin: 30px;
+  text-align: left;
+}
+
+#contact-form label {
+  display: block;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+#contact-form button {
+  padding: 0.5em;
+  background-color: var(--helper-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#contact-form button:hover {
+  background-color: var(--primary-color);
+}
+
+.footer {
+  font-size: 12px;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(75, 75, 75, 0.8);
+  color: white;
+  text-align: center;
+}
+
 /*--------------------------------
   media queries style start 
   <!-- subscribe to thapa technical Channle plz 
@@ -630,6 +617,13 @@ h4 {
 }
 
 @media (max-width: 980px) {
+  .primary-heading {
+    font-size: 30px;
+  }
+
+  #contact-form {
+    width: 100%;
+  }
 
   .text-container img {
     width: 100%;
