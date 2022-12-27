@@ -75,11 +75,23 @@ h4 {
   align-items: center;
   padding: 0 5.4rem;
   position: relative;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.822);
 }
 
 .header img {
   height: 100%;
   width: 300px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky+.content {
+  padding-top: 102px;
 }
 
 .navbar {
@@ -421,7 +433,10 @@ h4 {
 
 .post-container:hover,
 .post-container:active {
-  transform: scale(1.08);
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
 }
 
 .post-container img {
@@ -560,6 +575,23 @@ h4 {
   background-color: var(--primary-color);
 }
 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
 /*--------------------------------
   media queries style start 
   <!-- subscribe to thapa technical Channle plz 
@@ -591,9 +623,14 @@ h4 {
 @media (max-width: 980px) {
   .header img {
     width: 210px;
-
   }
 
+  .header nav {
+    position: absolute;
+    width: 100%;
+
+
+  }
 }
 
 @media (max-width: 980px) {
@@ -649,6 +686,11 @@ h4 {
     max-width: 96rem;
   }
 
+  .section-hero {
+    padding: 10px;
+    font-size: small;
+  }
+
   .section-hero .grid-two-column {
     grid-template-columns: 1fr;
   }
@@ -660,14 +702,10 @@ h4 {
   .navbar {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 100%;
     height: 100vh;
-    background: #000;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
 
     transform: translateX(100%);
     transition: all 0.3s linear;
@@ -680,9 +718,12 @@ h4 {
   .navbar .navbar-list {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    text-align: right;
+    background-color: var(--primary-color);
+    height: 100vh;
+    padding: 10px;
   }
+
 
   .navbar .navbar-link {
     color: var(--white);
@@ -723,6 +764,10 @@ h4 {
     width: 80%;
     left: 0;
   }
+
+  .recent-post-container {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -737,5 +782,51 @@ h4 {
   .hero-image .hero-img-overlay {
     width: 90%;
     left: 0;
+  }
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
