@@ -42,8 +42,7 @@ a {
 
 img {
   display: inline-block;
-  width: 70%;
-  height: 100%;
+  width: 100%;
 }
 
 li {
@@ -75,6 +74,7 @@ h4 {
   justify-content: space-between;
   align-items: center;
   padding: 0 5.4rem;
+  position: relative;
 }
 
 .header img {
@@ -290,14 +290,6 @@ h4 {
   padding: 15px 25px;
   border-top: 1px solid #ddd;
   overflow-y: scroll;
-}
-
-.main-container a {
-  padding: 0 10px 10px 0;
-}
-
-.main-container a:hover {
-  text-decoration: underline;
 }
 
 /*--------------------------------
@@ -568,18 +560,6 @@ h4 {
   background-color: var(--primary-color);
 }
 
-.footer {
-  font-size: 12px;
-  padding: 10px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(75, 75, 75, 0.8);
-  color: white;
-  text-align: center;
-}
-
 /*--------------------------------
   media queries style start 
   <!-- subscribe to thapa technical Channle plz 
@@ -736,8 +716,7 @@ h4 {
   }
 
   .hero-image img {
-    width: 50%;
-    height: 100%;
+    width: 60%;
   }
 
   .hero-image .hero-img-overlay {
