@@ -46,10 +46,11 @@
       <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
     </div>
   </header>
-  <h3 align="center"><a href="./notes/physics/GORKHA EARTHQUAKE.pptx" target="_blank">Download Gorkha earthquake
-      presentation</a></h3>
 
 
+  <h1 class="h1-bg-red" align="center"><a href="./notes/physics/GORKHA EARTHQUAKE.pptx" target="_blank">Download Gorkha
+      earthquake
+      presentation</a></h1>
 
   <!------calculator-->
   <div class="docked-btns-calculator">
@@ -79,6 +80,61 @@
     </a>
   </div>
 
+
+
+  <!---------------------------index front-->
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/s1.jpg" style="width:100%">
+      <div class="text">Natural Beauty</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/s2.jpg" style="width:100%">
+      <div class="text">Explore the Nature</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext"></div>
+      <img src="./img/s3.jpg" style="width:100%">
+      <div class="text">Hard work pays</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center; margin-bottom: 30px;">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+  </script>
+  <!---------------------------index front-->
   <!---------------------------ended-->
 
   <!----------subheader-->
@@ -112,55 +168,6 @@
   <hr>
   <!----------subheader end-->
 
-  <!----------------------------------hero-->
-  <main>
-    <section class="section section-hero">
-      <div class="container grid grid-two-column">
-        <div class="hero-data">
-          <h1 class="primary-heading">Enhance Your Potential</h1>
-          <p class="para">
-            “The art of reading and studying consists in remembering the essentials and forgetting what is not
-            essential.”
-            ― Adolf Hitler, Mein Kampf
-          </p>
-          <a href="#" target="_blank" class="btn">Get Started</a>
-
-          <div class="hero-icons">
-            <div class="grid grid-two-column">
-              <div class="hero-icon-style">
-                <ion-icon name="book" class="icon"></ion-icon>
-                <h2> Read</h2>
-                <p class="para">
-                  “We read to know we're not alone.”
-                  ― William Nicholson, Shadowlands<br>
-                  “Read a thousand books, and your words will flow like a river.” ― Lisa See
-                </p>
-              </div>
-              <div class="hero-icon-style">
-                <ion-icon name="clipboard" class="icon"></ion-icon>
-                <h2>Write</h2>
-                <p class="para">
-                  "If there's a book that you want to read, but it hasn't been written yet, then you must write it." —
-                  Toni Morrison
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- right side hero section  -->
-        <div class="hero-image">
-          <img src="img/i1.jpg" class="image" />
-          <div class="hero-img-overlay">
-            <p class="para">
-              Great things start from small beginnings.
-            </p>
-            <p class="para">Himal Shrestha</p>
-            <p class="para">Student </p>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
 
   <!---content started-->
 
