@@ -76,8 +76,10 @@ h4 {
   padding: 0 5.4rem;
   position: relative;
   z-index: 999;
-  background-color: rgba(255, 255, 255, 0.822);
+  background-color: var(--white);
+  box-shadow: 0 0 2rem 0 #393939;
 }
+
 
 .header img {
   height: 100%;
@@ -419,6 +421,21 @@ h4 {
 
 }
 
+.sub-container h3 {
+  padding: 5px;
+  font-size: 13px;
+}
+
+.h1-bg-red {
+  background-color: rgb(255, 85, 85);
+  padding: 10px;
+}
+
+.h1-bg-blue {
+  background-color: var(--helper-color);
+  padding: 10px;
+}
+
 .post-container {
   height: 300px;
   width: 250px;
@@ -591,6 +608,7 @@ td {
 tr:nth-child(even) {
   background-color: #f2f2f2;
 }
+
 
 /*--------------------------------
   media queries style start 
