@@ -13,22 +13,6 @@ var loder = document.getElementById("preloder");
 window.addEventListener("load", function () {
   loder.style.display = "none";
 })
-
-
-window.onscroll = function () { myFunction() };
-
-var header = document.getElementById("myHeader");
-var sticky = header.offsetTop;
-
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
-
-
 // instant nav bar
 function openSubject(evt, cityName) {
   var i, tabcontent, tablinks;

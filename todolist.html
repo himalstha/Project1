@@ -1,9 +1,35 @@
 <style>
-    /* Include the padding and border in an element's total width and height */
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nerko+One&display=swap');
+
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&family=Work+Sans:wght@400;500&display=swap");
+
     * {
+        margin: 0;
+        padding: 0;
         box-sizing: border-box;
-        border: 1px;
-        background-color: transparent;
+        font-family: "Montserrat", sans-serif;
+        font-size: 20px;
+    }
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #ffffff;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: rgb(0, 208, 255);
+        border-radius: 5px;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: darkcyan;
     }
 
     /* Remove margins and padding from the list */
@@ -18,7 +44,7 @@
         position: relative;
         padding: 12px 8px 12px 40px;
         background: #eee;
-        font-size: 18px;
+        font-size: 13px;
         transition: 0.2s;
 
         /* make the list items unselectable */
@@ -28,9 +54,20 @@
         user-select: none;
     }
 
+    h2 {
+        padding-bottom: 10px;
+    }
+
     /* Set all odd list items to a different color (zebra-stripes) */
     ul li:nth-child(odd) {
         background: #f9f9f9;
+    }
+
+    ul li:nth-last-child() {
+        background-color: rgb(255, 145, 0);
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
     }
 
     /* Darker background-color on hover */
@@ -68,14 +105,14 @@
     }
 
     .close:hover {
-        background-color: #000000;
+        background-color: #00bfff;
         color: white;
     }
 
     /* Style the header */
     .header {
         background-color: #00e1ff;
-        padding: 30px 40px;
+        padding: 10px 20px;
         color: white;
         text-align: center;
         border-top-left-radius: 25px;
