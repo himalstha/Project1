@@ -49,6 +49,61 @@
         </a>
     </div>
     <!---------ended-->
+    <!------------------sub navbar-->
+
+
+
+    <script>
+        function showleftSidebar() {
+            var elementl = document.getElementById("left-sidebar");
+            elementl.style.display = "block";
+            var elementl = document.getElementById("lbar");
+            elementl.classList.add("mystyle");
+            var elementl = document.getElementById("mbar");
+            elementl.classList.remove("mystyle");
+            var elementl = document.getElementById("rbar");
+            elementl.classList.remove("mystyle");
+            var elementm = document.getElementById("main-content");
+            elementm.style.display = "none";
+            var elementr = document.getElementById("right-sidebar");
+            elementr.style.display = "none";
+
+        }
+
+        function showMainContent() {
+            var elementl = document.getElementById("left-sidebar");
+            elementl.style.display = "none";
+            var elementl = document.getElementById("mbar");
+            elementl.classList.add("mystyle");
+            var elementl = document.getElementById("lbar");
+            elementl.classList.remove("mystyle");
+            var elementl = document.getElementById("rbar");
+            elementl.classList.remove("mystyle");
+            var elementm = document.getElementById("main-content");
+            elementm.style.display = "block";
+            var elementr = document.getElementById("right-sidebar");
+            elementr.style.display = "none";
+
+        }
+
+        function showRightSidebar() {
+            var elementl = document.getElementById("left-sidebar");
+            elementl.style.display = "none";
+            var elementl = document.getElementById("rbar");
+            elementl.classList.add("mystyle");
+            var elementl = document.getElementById("lbar");
+            elementl.classList.remove("mystyle");
+            var elementl = document.getElementById("mbar");
+            elementl.classList.remove("mystyle");
+            var elementm = document.getElementById("main-content");
+            elementm.style.display = "none";
+            var elementr = document.getElementById("right-sidebar");
+            elementr.style.display = "block";
+
+        }
+    </script>
+
+    <!------------------sub navbar-->
 
 
 
@@ -56,8 +111,15 @@
     <div class="himalstha-main-container">
 
 
+        <div class="sub-navbar">
+            <button onclick="showleftSidebar()" id="lbar">Short cuts</button>
+            <button onclick="showMainContent()" id="mbar" class="mystyle">Feeds</button>
+            <button onclick="showRightSidebar()" id="rbar">Events</button>
+        </div>
+
+
         <!-----------------------------left-->
-        <div class="himalstha-left-sidebar">
+        <div class="himalstha-left-sidebar" id="left-sidebar">
             <div class="left-sidebar-imp-link">
                 <a href="index.html"><img src="./img/home.png">Home</a>
                 <a href="game.html"><img src="./img/games.png">Play Games</a>
@@ -79,7 +141,7 @@
         </div>
         <!-----------------------------main-->
 
-        <div class="himalstha-main-content">
+        <div class="himalstha-main-content" id="main-content">
 
 
 
@@ -88,6 +150,90 @@
                 <input type="text" class="input-search" placeholder="Type to Search...">
             </div>
 
+
+
+
+
+
+            <div class="himalstha-main-content-post">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/i1.jpg">
+                        <div>
+                            <p>By Admin</p>
+                            <span>Jan 1 2023, 12:17 Pm</span>
+                        </div>
+                    </div>
+                    <a href=""><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+                <p class="post-text">
+                    Here are a few amazing facts:<br><br>
+
+                    1. The largest snowflake ever recorded was 15 inches in diameter and 8 inches thick.
+
+                    <br>2. The longest word in the English language, according to the Guinness Book of World Records, is
+                    pneumonoultramicroscopicsilicovolcanoconiosis.
+
+                    <br>3. The shortest war in history was between Britain and Zanzibar on 27 August 1896. Zanzibar
+                    surrendered after 38 minutes.
+
+                    <br>4. The term "butterfly" was originally "flutterby," but it was changed to "butterfly" due to the
+                    way the insects flutter through the air, resembling the motion of a butter churn.
+
+
+                    <a href="#AmazingFacts">#AmazingFacts</a>
+                </p>
+                </p>
+            </div>
+
+            <div class="himalstha-main-content-post">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/i1.jpg">
+                        <div>
+                            <p>By Admin</p>
+                            <span>Jan 1 2023, 12:17 Pm</span>
+                        </div>
+                    </div>
+                    <a href=""><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+                <p class="post-text">
+                    Here are a few amazing facts:<br><br>
+
+                    5. A group of flamingos is called a "flamboyance."
+
+                    <br>6. The Earth weighs approximately 6.5 sextillion tons (5.972 x 10^21 kg).
+
+                    <br>7.The longest wedding veil was 4.34 miles long.
+
+                    <br>8.The oldest recorded age for a person is 122 years and 164 days.
+
+                    <br>9. The longest kiss on record lasted 58 hours, 35 minutes, and 58 seconds.
+
+                    <br>10. The highest recorded speed of a falling raindrop is 18 mph.<a
+                        href="#AmazingFacts">#AmazingFacts</a>
+                </p>
+                </p>
+            </div>
+
+            <div class="himalstha-main-content-post">
+                <div class="post-row">
+                    <div class="user-profile">
+                        <img src="./img/i1.jpg">
+                        <div>
+                            <p>By Admin</p>
+                            <span>Jan 1 2023, 10:17 Pm</span>
+                        </div>
+                    </div>
+                    <a href=""><ion-icon name="ellipsis-vertical"></ion-icon></a>
+                </div>
+                <p class="post-text">
+                    Cristiano Ronaldo currently plays for AINassr, a Saudi Arabian professional soccer club. He joined
+                    the club on January 1, 2023. Prior to joining AINassr, Ronaldo played for Juventus F.C. in Italy and
+                    Real Madrid in Spain. He also spent six seasons with Manchester United in the English Premier
+                    League.<a href="#HappyNewyear">#Cr7</a></p>
+                </p>
+            </div>
 
             <div class="himalstha-main-content-post">
                 <div class="post-row">
@@ -175,14 +321,8 @@
         </div>
         <!-----------------------------Right-->
 
-        <div class="himalstha-right-sidebar">
+        <div class="himalstha-right-sidebar" id="right-sidebar">
 
-            <div class="right-sidebar-title">
-                <h4>To do List</h4><a>See more</a>
-            </div>
-            <div class="side-bar-event">
-                <iframe id="todolist" src="todolist.html" width="350" height="300" frameborder="0"></iframe>
-            </div>
 
 
 
@@ -225,6 +365,20 @@
                     <a href="#"> More info</a>
                 </div>
             </div>
+
+
+
+
+
+            <div class="right-sidebar-title">
+                <h4>To do List</h4><a>See more</a>
+            </div>
+            <div class="side-bar-event">
+                <iframe id="todolist" src="todolist.html" width="350" height="300" frameborder="0"></iframe>
+            </div>
+
+
+
 
 
             <div class="right-sidebar-title" id="add">
