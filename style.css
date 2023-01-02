@@ -1006,12 +1006,12 @@ facebook clone
 
 
 .side-bar-event {
-  justify-content: space-around;
   display: flex;
   font-size: 14px;
   margin-bottom: 20px;
   border-radius: 10px;
   transition: all .3s linear;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .side-bar-event:hover {
@@ -1019,7 +1019,6 @@ facebook clone
   cursor: pointer;
   background-color: rgb(255, 255, 255);
 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .left-event {
@@ -1027,7 +1026,7 @@ facebook clone
   height: 65px;
   width: 65px;
   margin-right: 15px;
-  padding-top: 10px;
+  padding-top: 15px;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1036,6 +1035,11 @@ facebook clone
 
 .side-bar-event p {
   font-size: 12px;
+}
+
+.right-event {
+  margin-top: -10px;
+
 }
 
 .side-bar-event a {
