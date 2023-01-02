@@ -40,3 +40,53 @@ window.addEventListener("load", function () {
 document.querySelector("#close").addEventListener("click", function () {
   document.querySelector(".popup-bg").style.display = "none";
 });
+
+
+
+function showleftSidebar() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "block";
+  var elementl = document.getElementById("lbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("mbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("rbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "none";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "none";
+
+}
+
+function showMainContent() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "none";
+  var elementl = document.getElementById("mbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("lbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("rbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "block";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "none";
+
+}
+
+function showRightSidebar() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "none";
+  var elementl = document.getElementById("rbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("lbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("mbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "none";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "block";
+
+}

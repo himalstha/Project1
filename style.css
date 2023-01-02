@@ -804,6 +804,16 @@ tr:nth-child(even) {
 
 }
 
+.text-container p {
+  padding: 010px 10px 0px 10px;
+
+}
+
+.text-container h2 {
+  font-size: 20px;
+  padding-top: 10px;
+}
+
 .new-container-right-post:hover {
   transform: translateY(-2px);
   box-shadow: none;
@@ -1215,13 +1225,6 @@ facebook clone
     display: none;
   }
 
-  .text-container {
-    font-size: small;
-  }
-
-  .text-container h1 {
-    font-size: small;
-  }
 
   td {
     padding: 3px 0 0 0;
