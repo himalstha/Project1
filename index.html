@@ -15,7 +15,6 @@
     crossorigin="anonymous"></script>
 
   <meta name="google-site-verification" content="H28Dp_8S3DtmUyO8zfsRDHYAOeU7a1uZo4ZOms8GUpo" />
-
 </head>
 
 <body>
@@ -37,7 +36,7 @@
         <li><a href="news.html" class="navbar-link"> News </a></li>
         <li><a href="contact.html" class="navbar-link"> Contact </a></li>
         <li><a href="signin.html" class="navbar-link"> Sign In </a></li>
-        <li><a href="signup.html" class="btn navbar-btn">Y</a></li>
+        <li><a href="signup.html" class="btn navbar-btn">Log In</a></li>
       </ul>
     </nav>
     <div class="mobile-navbar-btn">
@@ -46,375 +45,20 @@
     </div>
   </header>
 
-  <!------calculator-->
-  <div class="docked-btns-calculator">
-    <a href="calculator.html" class="register" target="_blank">
-      Use <ion-icon name="calculator"></ion-icon>
-    </a>
-  </div>
-  <!---------ended-->
-
-  <!---------------------------to do list-->
-  <div class="docked-btns-todolist">
-    <button class="register"
-      onclick="document.getElementById('todolist').style.display='block'; document.getElementById('closeTodolist').style.display='block';">
-      TO DO LIST</button>
-  </div>
-
-
-  <div class="docked-btns-todolist-iframe-close" id="closeTodolist">
-    <div class=" close-icon"><button
-        onclick="document.getElementById('todolist').style.display='none'; document.getElementById('closeTodolist').style.display='none';">
-        -<ion-icon name="close"></ion-icon></button></a></div>
-  </div>
-  <div class="docked-btns-todolist-iframe" id="todolist">
-    <a class="register" target="_blank">
-      <iframe id="todolist" src="todolist.html" width="350" height="500" frameborder="0"></iframe>
-    </a>
-  </div>
-
-  <!-----------to do list ended-->
-
-
-
-  <div class="slideshow-container">
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="./img/s1.jpg" style="width:100%">
-      <div class="text">
-        <p>Natural Beauty</p>
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="./img/s2.jpg" style="width:100%">
-      <div class="text">
-        <p>Explore the Nature</p>
-      </div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="./img/s3.jpg" style="width:100%">
-      <div class="text">
-        <p>Hard work pays</p>
-      </div>
-    </div>
-
-
-
-    <div class="dots">
-      <span class="dot"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      let i;
-      let slides = document.getElementsByClassName("mySlides");
-      let dots = document.getElementsByClassName("dot");
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
-      setTimeout(showSlides, 4000); // Change image every 2 seconds
-    }
-  </script>
-
-
   <!---------------------------index front-->
-  <!---------------------------ended-->
-
-  <!----------subheader-->
-  <div class="recent-post-container">
-    <h3>Recent Posts:</h3>
-    <a href="./notes/computer/c-programming.html">
-      <div class="recent-post">
-        <ion-icon name="code-slash"></ion-icon>
-        <h4>C- Programming Project -NEB Grade 12
-        </h4>
-      </div>
-    </a>
-    <a href="./notes/chemistry/12-chemistry-syllabus.html">
-      <div class="recent-post">
-        <ion-icon name="document-text"></ion-icon>
-        <h4>Chemistry syllabus -NEB Grade 12
-        </h4>
-      </div>
-    </a>
-    <a href="./notes/physics/12-physics-syllabus.html">
-      <div class="recent-post">
-        <ion-icon name="documents"></ion-icon>
-        <h4>Physics Syllabus -NEB Grade 12
-        </h4>
-      </div>
-    </a>
-
-  </div>
-  <hr>
-  <!----------subheader end-->
-
-
-  <!---content started-->
-
-  <h1 align="center" class="h1-bg-red">
-    Practise Questions Grade 12
-  </h1>
-  <div class="main-container">
-    <div class="sub-container">
-      <ul>
-        <li>
-          <h1 class="h1-bg-blue" align="center">
-            Physics
-          </h1>
-        </li>
-        <li>
-          <h1> </h1>
-        </li>
-        <li>
-          <h3> 1. Write down the factors on which the velocity of sound in air depends with explanation. </h3>
-        </li>
-        <li>
-          <h3> 2. At what temperature speed of sound be double its value at 0°c. </h3>
-        </li>
-        <li>
-          <h3>3. Two moles of ideal gases are heated at constant pressure from 27°c to 107 c. find work done by gas.
-          </h3>
-        </li>
-        <li>
-          <h3>4. Write work done in adiabatic process. </h3>
-        </li>
-        <li>
-          <h3>5. A particle of mass o.3kg vibrates with period of 2 seconds. if amplitude is 0.5m. what is its
-            maximum
-            kinetic energy? </h3>
-        </li>
-        <li>
-          <h3>6. Derive equation for progressive wave. </h3>
-        </li>
-        <li>
-          <h3>7. State and explain Kirchhoff's second law. </h3>
-        </li>
-        <li>
-          <h3> 8. What is principle of a potentiometer? How would you use it to compare the cmfs of two cells?</h3>
-        </li>
-        <li>
-          <h3> 9. State and explain principle of superposition of waves.</h3>
-        </li>
-        <li>
-          <h3> 10. Show that the dark and bright fringes are equally spaced in young's double slit experiment.</h3>
-        </li>
-        <li>
-          <h3>11. Using Bohr's postulates. find energy of electron in nth orbit of hydrogen. </h3>
-        </li>
-        <li>
-          <h3>12. Derive Bragg's equation. </h3>
-        </li>
-        <li>
-          <h3>13. How would you determine value of Planck's constant from experiment. describe with figure? </h3>
-        </li>
-      </ul>
+  <section class="index-body">
+    <div class="text">
+      <h2>My Portfolio Website</h2>
     </div>
-  </div>
-
-  <div class="main-container">
-    <div class="sub-container">
-
-      <p class="post-text">
-      <ul>
-        <li>
-          <h1 class="h1-bg-blue" align="center">Computer</h1>
-        </li>
-
-        <li>
-          <h3>1. Difference between OOP and POP... (At least 5 points excluding Definition and example)
-          </h3>
-
-        </li>
-        <li>
-          <h3> 2. Explain object and class in OOP with examples.
-          </h3>
-        </li>
-        <li>
-          <h3> 3. Define Polymorphism, Encapsulation and Abstraction in details. (Types, Example is must
-            in each
-            characteristic)
-          </h3>
-
-          </p>
-          <ul>
-            <h3>Ans:</h3>
-            <h3># Polymorphism: </h3>
-            <h3>Polymorphism means "hewing form".</h3>
-            <h3>It allow different objects to respond the same operation in different way. </h3>
-            <h3>It also allow different ways of using same function depending on what they are
-              operating. </h3>
-            <h3>Eg :- operator over loading. </h3>
-            <h3>Function over loading. </h3>
-          </ul>
-          <ul>
-            <h3> # Data Encapsulation:-</h3>
-            <h3>The process of bonding /combining together data and function into a single unit is
-              called data
-              encapsulation.</h3>
-            <h3>The data is not accessible to outside and only the member function of the class can
-              access data.
-            </h3>
-            <h3>This insulation of data from direct access by the program is data hiding. </h3>
-            <h3>Encapsulation prevents accidental alteration of the data. </h3>
-            <h3>Data encapsulation is achieve using access controllers. </h3>
-            <h3>Private</h3>
-            <h3>Public</h3>
-            <h3>Protected</h3>
-          </ul>
-          <ul>
-            <h3># Data abstraction:-</h3>
-            <h3>It is the process of showing only relevemt data or features of an object excluding other
-              uncessary
-              details.
-            </h3>
-            <h3>In oop , abstraction is achieved by the use of classes where only the essential data and
-              methods one
-              define.</h3>
-            <h3>Abstraction redues the complenify to the user and help them to undestand easily.</h3>
-            <h3>For example: If we represent car as an object, it is sufficient to know possing the
-              brake stops the
-              car.
-              We doesn't need to know actual mechanism process behind the braking system.</h3>
-            <h3></h3>
-          </ul>
-        </li>
-        <li>
-          <h3>4. What are the components of AI? (Start with definition and then components)
-          </h3>
-        </li>
-        <li>
-          <h3> 5. Explain the types of service models in cloud computing (Start with definition and then
-            types)
-          </h3>
-        </li>
-        <li>
-          <h3> 6. What are the 4Vs in big data. (Start with definition and then characteristics)
-          </h3>
-        </li>
-        <li>
-          <h3> 7. How the citizens of Nepal, business and government employee can access the government
-            services
-            using
-            internet? (Start with short definition of E-governance, then about types)
-          </h3>
-        </li>
-        <li>
-          <h3> 8. How can you implement IOT systems in your home. Is it really worth it? (Definition,
-            Applications
-            but
-            in
-            your home like fridge, light, AC, door lock etc.)
-          </h3>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="main-container">
-    <div class="sub-container">
-      <ul>
-        <h1 class="h1-bg-blue" align="center">Nepali</h1>
-
-
-        <li>
-          <h3>(१) कुनै एक प्रश्नको समीक्षात्मक उत्तर दिनुहोस् ।
-        <li>(क) ममता मानसिक द्दन्द आउनुका कारण के के हुन ?</li>
-        <li>(ख) कम्प्युटरलाई भाइरसमुक्त बनाउनका लागि प्रविधिज्ञ पेशल र एन्टिभाइरस गोर्खेले गरेका काम के के हुन् ?
-        </li>
-        </h3>
-        </li>
-        <li>
-          <h3>(२) दिइएका उखानको प्रयोग गरी एक अनुच्छेद लेख्नुहोस् । ओरालो लागेको मुगलाई बाच्छाले पनि खेद्छ, आकाशको
-            फल
-            आँखा
-            तरी मर आलु खाएर पेडाको धाक, अकबरी सुनलाई कसी लगाउनु पर्दैन </h3>
-        </li>
-        <li>
-          <h3>(३) कुनै दशओटा अनुकरणात्मक शब्दको प्रयोग गरी आफ्नो विद्यार्थी जीवनको वर्णन गर्नुहोस् ।</h3>
-        </li>
-        <li>
-          <h3>(४) भूत कालको अज्ञात पक्षका क्रियापदको प्रयोग गरी एक अनुच्छेद लेख्नुहोस् । </h3>
-        </li>
-        <li>
-          <h3> (५) सडक दुर्घटना न्यूनिकरणमा हाम्रो भुमिका शीर्षकमा एक टिप्पणी तयार पार्नुहोस् ।</h3>
-        </li>
-        <li>
-          <h3>(६) तपाईंको विद्यालयमा सञ्चालित कुनै कार्यक्रमलाई समेट्दै १५० प्रतिवेदन लेख्नुहोस् ।
-          </h3>
-        </li>
-        <li>
-          <h3>(७) तलको अनुच्छेदमा रेखाङ्कन गरिएका शब्दको शब्दवर्ग पहिचान गर्नुहोस्।
-        <li>श्रीखण्डको <u>बोट</u> जहाँ हुन्छ, वरिपरिका वनमारा र तीतेपाती<u>समेत</u> सुगन्धित बनाउँछ। आहा ! प्रसन्नता
-          साँच्चै उच्च कोटिको ऐश्वर्य हो । <u>प्रसन्नचित्त</u> व्यक्ति जहाँजहाँ जान्छ ऐश्वर्य बाँडेर <u>हिँड्छ
-          </u><u>तर</u> <u>पनि</u> ऐश्वर्य कहिल्यै समाप्त हुँदैन ।</li>
-        </h3>
-        </li>
-        <li>
-          <h3>(८) ले, लाई, बाट, द्वारा, देखि, को, नो, मा विभवित लागेका भिन्न भिन्न कारकको प्रयोग गरी पाँच वाक्यमा
-            तपाईंको
-            नजिकको साथीका विषयमा वर्णगर्नुहोस्।</h3>
-        </li>
-      </ul>
-
-    </div>
-  </div>
-
-
-
-  <div class="main-container">
-    <a href="./practise.html">
-      <div>
-        <h2> 12-NEB Practise questions</h2>
-      </div>
-    </a>
-    <a href="./notes/physics/12-gorkha-earthquake.html">
-      <h2>Grade 12 Physics - Gorkha earthquake</h2>
-    </a>
-
-  </div>
-  <!-------------------------------------You can find-------------------------------->
-  <div class="main-container">
-
-
-    <h2><a href="./notes/physics/12-mechanics.html">Grade 12 Physics Mechanics</a></h2>
-    <h2><a href="./notes/physics/12-physics-rotational-dynamics.html"> Grade 12 physics Rotational dynamics</a></h2>
-    <h2><a href="./notes/physics/12-physics-syllabus.html">Grade 12 physics syllabus</a></h2>
-
-  </div>
-  <div class="main-container">
-
-    <h2><a href="./notes/chemistry/12-chemistry-syllabus.html">Grade 12-chemistry-syllabus</a></h2>
-    <h2><a href="./notes/chemistry/12-ionic-equilibrium.html">Grade 12-ionic-equilibrium</a></h2>
-    <h2><a href="./notes/chemistry/12-volumetric-analysis.html">Grade 12-volumetric-analysis</a></h2>
-    <h2><a href="./notes/computer/12-computer-syllabus.html">Grade 12-computer-syllabus</a></h2>
-    <h2><a href="./notes/computer/c-programming.html">Grade 12 c-programming</a></h2>
-  </div>
-
-
-
-
+    <img src="./img/poetfolio.1-mob.jpg" alt="" class="portfolio-img">
+    <img src="./img/poetfolio.1.jpg" alt="" class="portfolio-img2">
+    <div class="view-btn"><a href="./portfolio/index.html" target="_blank"><button>View Now<ion-icon
+            name="chevron-up-circle-outline"></ion-icon></button></a></div>
+  </section>
 
 
   <!-----------footer-->
-  <div class="footer">
+  <div class=" footer">
     <p class="footer-company-name">himalstha.com.np © 2022</p>
   </div>
   <footer class="footer-distributed">
@@ -458,8 +102,6 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
   <script src="index.js">
 
 
