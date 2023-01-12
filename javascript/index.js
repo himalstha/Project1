@@ -89,14 +89,10 @@ function showRightSidebar() {
 
 
 
-    document.onclick = function (e) {
-      if (e.target.id != 'searchContainer') {
+  
 
-      }
-    }
-    function showSearchbar() {
-      document.getElementById('searchbar').style.display = "block";
-      document.getElementById('searchid').classList.add('active');
+    function showsearchlist() {
+      document.getElementById('list').style.display = "none";
     }
     // JavaScript code
     function search_animal() {
@@ -115,3 +111,11 @@ function showRightSidebar() {
         }
       }
     }
+
+
+
+
+
+
+
+
