@@ -1,0 +1,117 @@
+
+
+var options = {
+      classname: 'my-class',
+      id: 'my-id'
+    };
+    var nanobar = new Nanobar(options);
+    nanobar.go(30);
+    nanobar.go(76);
+    nanobar.go(100);
+
+
+
+
+    const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  // alert("hi");
+  nav_header.classList.toggle("active");
+};
+
+//  subscribe to thapa technical Channle plz link:https://www.youtube.com/thapatechnical
+mobile_nav.addEventListener("click", () => toggleNavbar());
+
+var loder = document.getElementById("preloder");
+window.addEventListener("load", function () {
+  loder.style.display = "none";
+})
+
+
+window.addEventListener("load", function () {
+  setTimeout(
+    function open(event) {
+    },
+    1000
+  )
+});
+
+
+
+function showleftSidebar() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "block";
+  var elementl = document.getElementById("lbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("mbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("rbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "none";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "none";
+
+}
+
+function showMainContent() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "none";
+  var elementl = document.getElementById("mbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("lbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("rbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "block";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "none";
+
+}
+
+function showRightSidebar() {
+  var elementl = document.getElementById("left-sidebar");
+  elementl.style.display = "none";
+  var elementl = document.getElementById("rbar");
+  elementl.classList.add("mystyle");
+  var elementl = document.getElementById("lbar");
+  elementl.classList.remove("mystyle");
+  var elementl = document.getElementById("mbar");
+  elementl.classList.remove("mystyle");
+  var elementm = document.getElementById("main-content");
+  elementm.style.display = "none";
+  var elementr = document.getElementById("right-sidebar");
+  elementr.style.display = "block";
+
+}
+
+
+
+    document.onclick = function (e) {
+      if (e.target.id != 'searchContainer') {
+
+      }
+    }
+    function showSearchbar() {
+      document.getElementById('searchbar').style.display = "block";
+      document.getElementById('searchid').classList.add('active');
+    }
+    // JavaScript code
+    function search_animal() {
+      let input = document.getElementById('searchbar').value
+      input = input.toLowerCase();
+      let x = document.getElementsByClassName('animals');
+
+      for (i = 0; i < x.length; i++) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+          x[i].style.display = "none";
+        } else if (input == "") {
+          x[i].style.display = "none";
+        }
+        else {
+          x[i].style.display = "list-item";
+        }
+      }
+    }
