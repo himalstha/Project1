@@ -241,10 +241,7 @@ class overLays extends HTMLElement {
 customElements.define('body-overlays', overLays);
 
 
-const searchBar = document.getElementById('searchbar');
-searchBar.addEventListener('click', (e) =>{
-  document.getElementsByClassName("crossicon").style.display = "block";
-})
+
 
 // -- - - - - -- - -Dark theme ---- - -- - - -
 const darkBtn = document.querySelector('.fas');
