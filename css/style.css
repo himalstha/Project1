@@ -174,8 +174,8 @@ color: var(--primary-shades);
 }
 
 .mobile-nav-icon {
-  font-size: 3.2rem;
-  color: var(--primary-color);
+  font-size: 3rem;
+  color: var(--primary-shades);
 }
 
 .mobile-navbar-btn {
@@ -1439,8 +1439,8 @@ a.x-read_more:hover {
   place-items: center;
 }
 #progress-value ion-icon{
-  color: black;
-  font-size: 35px;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
 }
 
 
@@ -1516,6 +1516,28 @@ a.x-read_more:hover {
 .bbg-center .bbg-btns button:last-child {
   background: var(--white);
   color: var(--primary-shades);
+}
+
+
+
+
+.termsCondition-container{
+  padding: 10px;
+  font-size: 14px;
+  margin-left: 30%;
+  transform: translate(-30%,0);
+}
+.termsCondition-container p{
+  padding: 6px 5px;
+}
+@media  (max-width:980px)
+{
+    .termsCondition-container {
+        padding: 10px;
+        font-size: 14px;
+        margin-left: 0%;
+        transform: none;
+      }
 }
 /*--------------------------------
   media queries style start 
@@ -1791,9 +1813,9 @@ img.portfolio-img2 {
       display: flex;
       flex-direction: column;
       text-align: right;
-      background-color: var(--helper-color);
       height: 100vh;
       padding: 10px;
+      backdrop-filter: blur(10px);
     }
 
 
@@ -1821,8 +1843,6 @@ img.portfolio-img2 {
 
     .active .mobile-navbar-btn .mobile-nav-icon[name="menu"] {
       display: none;
-      color: var(--white);
-        z-index: 999;
     }
 
     .recent-post-container {

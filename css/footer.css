@@ -25,7 +25,7 @@
     width: 100%;
     text-align: left;
     font: bold 16px sans-serif;
-    padding: 55px 50px;
+    padding: 35px 30px 0px 30px;
 }
 
 .footer-distributed .footer-left,
@@ -179,11 +179,11 @@
     height: 35px;
 border-radius: 50%;
     font-size: 20px;
-    color: var(--white);
+    color: white;
     text-align: center;
     line-height: 35px;
     transition: all .3s;
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 3px var(--primary-shades);
 }
 .footer-distributed .footer-icons a:nth-child(1){
     background-color: rgb(0, 166, 255);
@@ -202,7 +202,33 @@ border-radius: 50%;
     background-color: var(--para-color);
     color: var(--white);
 }
-
+.termsCondition{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid var(--para-color);
+    width: 100%;
+    padding: 10px 0;
+}
+.termsCondition a{
+    cursor: pointer;
+    font-weight: 300;
+    padding-left: 10px;
+    text-align: center;
+    font-size: 12px;
+   
+}
+.termsCondition a:hover{
+    font-weight: 500;
+    color:var(--primary-color);
+    transition: all .1s linear;
+    text-decoration: underline;
+}
+.termsCondition a:last-child:hover{
+    text-decoration: none;
+    cursor: text;
+    font-weight: 300;
+}
 /* If you don't want the footer to be responsive, remove these media queries */
 
 @media (max-width: 880px) {

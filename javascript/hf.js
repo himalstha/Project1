@@ -65,6 +65,8 @@ class MyFooter extends HTMLElement {
         <a href="http://www.call-outline.com/"><ion-icon name="call-outline"></ion-icon></i></a>
       </div>
     </div>
+    <div class="termsCondition"><a href="./../../../../termsCondition.html">Terms</a><a href="./../../../../privacyPolicy.html">Privacy and Policy</a><a href="./../../../../cookies.html
+        ">Cookies</a><a href="advertising.html">Adversing</a><a>himalstha.com.np © 2023</a></div>
   </footer>
 
   
@@ -231,7 +233,7 @@ class overLays extends HTMLElement {
 
 
     <div id="progress">
-    <span id="progress-value"><ion-icon name="arrow-up-circle-outline"></ion-icon></span>
+    <span id="progress-value"><ion-icon name="chevron-up-outline"></ion-icon></span>
   </div>
 <div style="height: 6rem;"></div>
     `;
