@@ -66,7 +66,7 @@ class MyFooter extends HTMLElement {
       </div>
     </div>
     <div class="termsCondition"><a href="./../../../../termsCondition.html">Terms</a><a href="./../../../../privacyPolicy.html">Privacy and Policy</a><a href="./../../../../cookies.html
-        ">Cookies</a><a href="advertising.html">Adversing</a><a>himalstha.com.np © 2023</a></div>
+        ">Cookies</a><a href="advertising.html">Advertising</a><a>himalstha.com.np © 2023</a></div>
   </footer>
 
   
