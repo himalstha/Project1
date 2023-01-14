@@ -188,15 +188,12 @@ color: var(--primary-shades);
 .cookie {
   display: flex;
   position: fixed;
-  left: 2%;
-  bottom: 80px;
-  height: 10rem;
-  width: 50rem;
+  left: 0%;
+  bottom: 0;
+  width: 100%;
   background-color: rgb(255, 255, 255);
-  padding: 5px;
-  padding-top: 15px;
-  justify-content: space-between;
-  border-radius: 10px;
+  padding: 10px 7px;
+  justify-content: space-around;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.475);
   z-index: 99;
   cursor: pointer;
@@ -250,21 +247,17 @@ color: var(--primary-shades);
   color: black;
   text-decoration: underline;
   text-align: center;
-  padding-top: 5px;
   padding-left: 15px;
 }
 
 .cookie-btn button:hover {
-  background-color: white;
+  background-color: var(--bg-color);
 
 
 }
 
 @media (max-width:980px) {
   .cookie {
-    padding: 0;
-    width: 350px;
-    height: 8rem;
   }
 
   .cookie-img img {
