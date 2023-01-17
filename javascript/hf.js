@@ -26,21 +26,18 @@ class faceLeft extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
            <div class="left-sidebar-imp-link">
-                <a href="./../../../../../../index.html"><img src="./../../img/home.png">Home  wdx</a>
-                <a href="game.html"><img src="./../../img/games.png">Play Games</a>
-                <a href="notes.html"><img src="./../../img/note.png">See Notes</a>
-                <a href="contact.html"><img src="./../../img/contact.png">Contact Admin</a>
+                <a href="./../../../../../../index.html"><img src="./../../img/home.png">Home</a>
+                <a href="./../../../../../navlinks/notes.html"><img src="./../../img/note.png">See Notes</a>
+                <a href="./../../../../../navlinks/contact.html"><img src="./../../img/contact.png">Contact Admin</a>
                 <a href="#">See More</a>
             </div>
             <div class="left-sidebar-shortcut-link">
                 <p>Your Shortcuts</p>
-                <a href="./notes/computer/c-programming.html"><img src="./../../notes/computer/c1.jpg" alt="">Grade 12
+                <a href="./../../../../../navlinks/notes/computer/c-programming.html"><img src="./../../notes/computer/c1.jpg" alt="">Grade 12
                     C-programming Project</a>
-                <a href="./notes/math/12-math-syllabus.html"><img src="./../../img/chemistry.jpg" alt="">Grade 12 Math
+                <a href="./../../../../../../navlinks/notes/math/12-math-syllabus.html"><img src="./../../img/chemistry.jpg" alt="">Grade 12 Math
                     syllabus</a>
-                <a href="./exercise/job-application.html"><img src="./../../exercise/job-application.jpg" alt="">Job
-                    Application</a>
-                <a href="./notes/physics/12-physics-syllabus.html"><img src="./../../notes/physics/ac-generator.jpg"
+                <a href="./../../../../../navlinks/notes/physics/12-physics-syllabus.html"><img src="./../../notes/physics/ac-generator.jpg"
                         alt="">Grade 12 Physics syllabus</a>
             </div>
     `;
@@ -52,54 +49,16 @@ customElements.define('body-left', faceLeft);
 class faceRight extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
+    <div class="right-sidebar-title">
+                <h4>Recent Posts</h4><a href="#">See more</a>
+            </div>
             <div class="right-sidebar-title">
-                <h4>Up Comming Events</h4><a>See more</a>
+                <h4>Up Comming Events</h4><a href="#">See more</a>
             </div>
-
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>16</h3>
-                    <span>January  nwids</span>
-                </div>
-                <div class="right-event">
-                    <h4> Martin Luther King Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
+            <div class="right-sidebar-event">
+             <a href="./../../../../navlinks/physics/12-physics-syllabus.html>Grade 12 Physics</li>
             </div>
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>19</h3>
-                    <span>January</span>
-                </div>
-                <div class="right-event">
-                    <h4>Confederate Heroes' Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
-            </div>
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>27</h3>
-                    <span>January</span>
-                </div>
-                <div class="right-event">
-                    <h4>
-                        International Holocaust Remembrance Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
-            </div>
-
-            <div class="right-sidebar-title" id="add">
-                <h4>Advertisement</h4><a onclick="closeAdd()"><ion-icon name="close-outline"></ion-icon></a>
-            </div>
-            <img src="./img/ncell-1.jpg" class="adds-img">
-
-            <div class="right-sidebar-title">
-                <h4>Conversations</h4><a><ion-icon name="close-outline"></ion-icon></a>
-            </div>
-        </div>
+            
     `;
   }
 }
@@ -110,7 +69,7 @@ class subNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
         <div class="sub-navbar">
-            <button onclick="showleftSidebar()" id="lbar">niew Short cuts</button>
+            <button onclick="showleftSidebar()" id="lbar">Short cuts</button>
             <button onclick="showMainContent()" id="mbar" class="mystyle">Feeds</button>
             <button onclick="showRightSidebar()" id="rbar">Events</button>
         </div> `;

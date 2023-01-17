@@ -765,10 +765,8 @@ tr:nth-child(even) {
 }
 
 .text-container-m p {
-  padding: 10px 10px 0px 10px;
-
+  padding: 0px 10px 10px 15px;
 }
-
 .text-container-m h2 {
   font-size: 20px;
   padding-top: 10px;
@@ -1225,22 +1223,6 @@ facebook clone
 }
 
 
-.side-bar-event {
-  display: flex;
-  font-size: 14px;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  transition: all .3s linear;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.side-bar-event:hover {
-  font-weight: 500;
-  cursor: pointer;
-  background-color: rgb(255, 255, 255);
-
-}
-
 .left-event {
   border-radius: 10px;
   height: 65px;
@@ -1287,7 +1269,7 @@ facebook clone
 
 .himalstha-main-content-post {
   width: 100%;
-  background-color: #000000;
+  background-color:var(--bg-color);
   border-radius: 6px;
   color: #ffffff;
   margin: 10px 0;
@@ -1314,22 +1296,22 @@ facebook clone
 }
 
 .post-row a {
-  color: var(--white);
+  color: var(--primary-shades);
 }
 
 .user-profile p {
   font-weight: 500;
-  color: var(--white)
+  color: var(--primary-shades)
 }
 
 .himalstha-main-content-post span {
   font-size: 13px;
-  color: rgb(203, 203, 203);
+  color: rgb(78, 78, 78);
 }
 
 .post-text {
   padding: 20px 20px 20px 20px;
-  color: white;
+  color: var(--primary-shades);
   font-size: 15px;
 }
 
