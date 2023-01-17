@@ -19,7 +19,7 @@ body {
 }
 
 .my-class .bar {
-  background: #12c4fa;
+  background: var();
 }
 
 /* width */
@@ -145,7 +145,6 @@ color: var(--primary-shades);
   gap: 3.2rem;
   font-size: 1.5rem;
 }
-
 .navbar-list .navbar-btn {
   padding: 1.2rem 2.4rem;
   background-color: var(--helper-color);
@@ -160,6 +159,7 @@ color: var(--primary-shades);
 .navbar-list .navbar-link:active {
   color: var(--primary-shades);
   font-weight: 500;  
+  border-bottom: 2px solid red;
 }
 
 .navbar-btn:hover,
@@ -170,9 +170,8 @@ color: var(--primary-shades);
 
 .navbar-link {
   text-transform: uppercase;
-    color: var(--primary-color)
+    color: var(--primary-shades);
 }
-
 .mobile-nav-icon {
   font-size: 3rem;
   color: var(--primary-shades);

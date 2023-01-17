@@ -14,7 +14,6 @@ himalstha<span>.com.np</span></a>
         <li><a href="./../../../../../navlinks/notes.html" class="navbar-link"> Notes </a></li>
         <li><a href="./../../../../../navlinks/news.html" class="navbar-link"> News </a></li>
         <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
-       
      </ul>
     </nav>    
     `;
@@ -74,7 +73,7 @@ class MyFooter extends HTMLElement {
     `;
   }
 }
-    
+
 customElements.define('footer-last', MyFooter);
 
 
@@ -107,9 +106,6 @@ class overLays extends HTMLElement {
 
     <!-- ordered list -->
     <ol id='list' class="ol-list">
-
-
-    
       <li class="animals">
               <div style="display:none;">neb himal show notes grade 11 grade 12 all notes and excercises</div>
               <div class="list-tm"><img src="./../../../../../img/i1.jpg" alt=""><a href="./../../../../../navlinks/notes.html">See all the notes <ion-icon name="search-outline"></ion-icon></a></div>
@@ -228,6 +224,7 @@ class overLays extends HTMLElement {
         <div style="display:none;">himal grade 12 computer c programming cprogramming grade12 cprogramming</div>
         <div class="list-tm"><img src="./../../../../../img/logo.jpg" alt=""><a href="./../../../../../navlinks/notes/computer/c-programming.html">C-programming Grade 12 Computer<ion-icon name="search-outline"></ion-icon></a></div>
       </li>
+      
     </ol>
   </div>
 
@@ -239,7 +236,7 @@ class overLays extends HTMLElement {
     `;
   }
 }
-    
+
 customElements.define('body-overlays', overLays);
 
 
@@ -250,55 +247,55 @@ const darkBtn = document.querySelector('.fas');
 const bodyEl = document.querySelector('body');
 
 const darkMode = () => {
-    bodyEl.classList.toggle('dark')
+  bodyEl.classList.toggle('dark')
 }
 
 darkBtn.addEventListener('click', () => {
-    // Get the value of the "dark" item from the local storage on every click
-    setDarkMode = localStorage.getItem('dark');
+  // Get the value of the "dark" item from the local storage on every click
+  setDarkMode = localStorage.getItem('dark');
 
-    if(setDarkMode !== "on") {
-        darkMode();
-        // Set the value of the itwm to "on" when dark mode is on
-        setDarkMode = localStorage.setItem('dark', 'on');
-    } else {
-        darkMode();
-        // Set the value of the item to  "null" when dark mode if off
-        setDarkMode = localStorage.setItem('dark', null);
-    }
+  if (setDarkMode !== "on") {
+    darkMode();
+    // Set the value of the itwm to "on" when dark mode is on
+    setDarkMode = localStorage.setItem('dark', 'on');
+  } else {
+    darkMode();
+    // Set the value of the item to  "null" when dark mode if off
+    setDarkMode = localStorage.setItem('dark', null);
+  }
 });
 
 // Get the value of the "dark" item from the local storage
 let setDarkMode = localStorage.getItem('dark');
 
 // Check dark mode is on or off on page reload
-if(setDarkMode === 'on') {
-    darkMode();
+if (setDarkMode === 'on') {
+  darkMode();
 }
 
 
 //-- - -  - - -     Go to top -     - - -- - - - -   
 
-    let calcScrollValue = () => {
-      let scrollProgress = document.getElementById("progress");
-      let progressValue = document.getElementById("progress-value");
-      let pos = document.documentElement.scrollTop;
-      let calcHeight =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
-      let scrollValue = Math.round((pos * 100) / calcHeight);
-      if (pos > 100) {
-        scrollProgress.style.display = "grid";
-      } else {
-        scrollProgress.style.display = "none";
-      }
-      scrollProgress.addEventListener("click", () => {
-        document.documentElement.scrollTop = 0;
-      });
-      scrollProgress.style.background = `conic-gradient(#12c4fa ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
-    };
-    window.onscroll = calcScrollValue;
-    window.onload = calcScrollValue;
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+  if (pos > 100) {
+    scrollProgress.style.display = "grid";
+  } else {
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#12c4fa ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
 
 
 
