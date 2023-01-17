@@ -32,77 +32,202 @@
 
     <body-overlays></body-overlays>
 
+    <div class="himalstha-main-container">
 
-    <div class="job-application-header">
-        <div class="job-application-video">
-            <img src="./c2.jpg">
+        <sub-nav>
+        </sub-nav>
+
+        <!-----------------------------left-->
+        <div class="himalstha-left-sidebar" id="left-sidebar">
+            <body-left></body-left>
         </div>
-        <div class="job-application-text">
-            <h1> Grade 12 C-programing</h1>
-        </div>
-    </div>
-    <div class="main-container">
-        <div class="text-container">
-            <ul> <a href="../../notes.html">Notes</a><span><ion-icon name="chevron-forward-sharp"></ion-icon> <a
-                        href="12-computer-syllabus.html">12-computer-syllabus</a><span><ion-icon
-                            name="chevron-forward-sharp"></ion-icon></span>
-                    <br><br>
-                    <p>
+        <!-----------------------------main-->
 
-                    <h3>1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
-                    </h3><br><img src="c1.jpg">
-                    <br>Output:<br><img src="c1-output.jpg"><br><br>
+        <div class="himalstha-main-content" id="main-content">
 
-                    <h3>2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
-                    </h3><br><img src="c2.jpg">
-                    <br>Output:<br><img src="c2-output.jpg"><br><br>
+            <div class="text-container-m">
+                <a href="../../notes.html">Notes</a>
+                <ion-icon name="chevron-forward-sharp"></ion-icon> <a href="12-computer-c-programming.html">Grade 12 C
+                    Programming</a>
+                <br><br>
+                <p>
 
-                    <h3>3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
-                    </h3><br><img src="c3.jpg">
-                    <br>Output:<br><img src="c3-output.jpg"><br><br>
+                <h3>1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;&nbsp;<br />
+                        #include &lt;conio.h&gt;<br />
+                        void main(){<br />
+                        int n, s=0, i, j;<br />
+                        printf(&quot;How many number do you want to print: \n&quot;);&nbsp;<br />
+                        scanf(&quot;%d&quot;, &amp;n);<br />
+                        int a[n];<br />
+                        for (i=1; i&lt;=n; i++){<br />
+                        &nbsp; &nbsp; &nbsp;printf(&quot;Enter %d position number:&quot;,i);<br />
+                        &nbsp; &nbsp; &nbsp;scanf(&quot;%d&quot;, &amp;a[i]);<br />
+                        &nbsp; &nbsp; &nbsp;}<br />
+                        &nbsp; &nbsp; for(i=1; i&lt;=n; i++){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; for (j=i+1; j&lt;=n; j++){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (a[i]&gt;a[j]){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;s=a[i];<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[i]=a[j];<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[j]=s;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; &nbsp;for(i=1; i&lt;=n; i++){&nbsp;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;printf(&quot;%d \t&quot;,a[i]);<br />
+                        &nbsp; &nbsp; &nbsp;}<br />
+                        &nbsp; &nbsp; &nbsp;getch ();<br />
+                        }</span></p><br><br>
 
-                    <h3>4. WAP TO sort an array in alphabetical order.
-                    </h3><br><img src="c4.jpg">
-                    <br>
-                    <h3>5. WAP TO print sum of n natural number.
-                    </h3><br><img src="c5.jpg">
-                    <br>Output:<br><img src="c5-output.jpg"><br><br>
-                    <h3>6. WAP to print sum of digits of Entered number.
-                    </h3><br><img src="c6.jpg">
-                    <br>Output:<br><img src="c5-output.jpg"><br><br>
-                    <h3>7. WAP to take input of salary of n employee and count how manay of them have salary greater
-                        than 30000.
-                    </h3><br><img src="c7.jpg">
-                    </p>
+                <h3>2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
+                </h3>
+                <p><code><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;&nbsp;<br />
+                #include &lt;conio.h&gt;<br />
+                void main(){<br />
+                int n, m, Rem, Rev=0;<br />
+                printf(&quot;Enter any number:&quot;);<br />
+                scanf(&quot;%d&quot;, &amp;n);<br />
+                m=n;<br />
+                while (n!=0){<br />
+                &nbsp; &nbsp; Rem=n%10;<br />
+                &nbsp; &nbsp; Rev=Rev*10+Rem;<br />
+                &nbsp; &nbsp; n=n/10;<br />
+                }<br />
+                if(Rev==m){<br />
+                &nbsp; &nbsp; printf(&quot;The entered number is palindrome&quot;);<br />
+                }<br />
+                else{<br />
+                &nbsp; &nbsp; printf(&quot;Entered number is not palindrome.&quot;);<br />
+                }<br />
+                getch();<br />
+                }</span></code></p><br><br>
 
-        </div>
-    </div>
-    <div class="main-container">
-        <div class="new-container-right">
-            <div class="new-container-right-heading">
-                <h2 align="center"> Other Posts : </h2>
+                <h3>3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;&nbsp;<br />
+                        #include &lt;conio.h&gt;<br />
+                        void main(){<br />
+                        &nbsp; &nbsp; int n, m, Rem, Arm=0;<br />
+                        &nbsp; &nbsp; printf(&quot;Enter any number: &quot;);<br />
+                        &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+                        &nbsp; &nbsp; m=n;<br />
+                        &nbsp; &nbsp; while (n!=0){<br />
+                        &nbsp; &nbsp; Rem=n%10;<br />
+                        &nbsp; &nbsp; Arm=Arm+(Rem*Rem*Rem);<br />
+                        &nbsp; &nbsp; n=n/10;<br />
+                        &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; if (Arm==m){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The entered number is ARMSTRONG&quot;);<br />
+                        &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; else{<br />
+                        &nbsp; &nbsp; printf(&quot;Entered number is not ARMSTRONG.&quot;);<br />
+                        &nbsp; &nbsp; }<br />
+                        getch();<br />
+                        }</span></p><br><br>
+
+                <h3>4. WAP TO sort an array in alphabetical order.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
+                        #include &lt;conio.h&gt;&nbsp;<br />
+                        #include &lt;string.h&gt;<br />
+                        int main()<br />
+                        {<br />
+                        &nbsp; &nbsp; int n,i,j;<br />
+                        &nbsp; &nbsp; printf(&quot;How many word do you want to enter? &quot;);<br />
+                        &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+                        &nbsp; &nbsp; char name[100][n],s[100];<br />
+                        &nbsp; &nbsp; for (i=1; i&lt;=n; i++){<br />
+                        &nbsp; &nbsp; printf(&quot;Enter %d position name: &quot;,i);<br />
+                        &nbsp; &nbsp; scanf(&quot;%s&quot;, name[i]);<br />
+                        }<br />
+                        &nbsp; &nbsp; for(i=1; i&lt;=n; i++){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; for (j=i; j&lt;=n; j++){&nbsp;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(strcmp(name[i], name [j])&gt;0){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(s, name[i]);&nbsp;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(name[i],name[j]);<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(name[j],s);<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; }&nbsp;<br />
+                        &nbsp; &nbsp; printf (&quot;The sorted name in alphabetical order are \n&quot;);&nbsp;<br />
+                        &nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+                        &nbsp; &nbsp; {<br />
+                        &nbsp; &nbsp; printf(&quot;%s \n&quot;, name[i]);<br />
+                        &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; getch();<br />
+                        }</span></p>
+
+                <br>
+                <h3>5. WAP TO print sum of n natural number.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
+                        #include &lt;conio.h&gt;<br />
+                        void main()<br />
+                        {<br />
+                        &nbsp; &nbsp; int n, sum;<br />
+                        &nbsp; &nbsp; printf (&quot;Enter n number: &quot;);<br />
+                        &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+                        &nbsp; &nbsp; sum=n* (n+1)/2;<br />
+                        &nbsp; &nbsp; printf (&quot;Sum of natural numbers upto %d is %d&quot;,n, sum);<br />
+                        &nbsp; &nbsp; getch();<br />
+                        }</span></p><br><br>
+
+                <h3>6. WAP to print sum of digits of Entered number.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
+                        #include &lt;conio.h&gt;<br />
+                        void main()<br />
+                        {<br />
+                        &nbsp; int n, sum=0, r;<br />
+                        &nbsp; &nbsp; printf (&quot;Enter any number: &quot;);<br />
+                        &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+                        &nbsp; &nbsp; while (n!=0){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; r = n%10;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; sum = sum+r;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; n=n/10;<br />
+                        &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; printf (&quot;Sum of the digits is : %d &quot;, sum);<br />
+                        &nbsp; &nbsp; getch();<br />
+                        }</span></p><br><br>
+                <h3>7. WAP to take input of salary of n employee and count how manay of them have salary
+                    greater
+                    than 30000.
+                </h3>
+                <p><span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
+                        #include &lt;conio.h&gt;<br />
+                        void main()<br />
+                        {<br />
+                        &nbsp; &nbsp; int n, count=0;<br />
+                        &nbsp; &nbsp; printf(&quot;How many employee? &quot;);<br />
+                        &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+                        &nbsp; &nbsp; int salary[n], i;<br />
+                        &nbsp; &nbsp; for (i=1; i&lt;=n; i++){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Enter salary of %d position employee: &quot;,i);<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;salary[i]);&nbsp;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; if (salary[i]&gt;=30000){<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count = count +1;<br />
+                        &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+                        &nbsp; &nbsp; }&nbsp;<br />
+                        &nbsp; &nbsp; printf (&quot;The total number of employee that have more than 30k salary are: %d
+                        &quot;,
+                        count);<br />
+                        &nbsp; &nbsp; getch();<br />
+                        }</span></p>
+
+                </p>
+
             </div>
-            <div class="new-container-right-post">
-                <a href="./../../exercise/job-application.html">
-                    <div class="new-container-right-post-image">
-                        <img src="./../../exercise/job-application.jpg">
-                    </div>
-                    <div class="new-container-right-post-discription">
-                        <h3>How to write job application</h3>
-                    </div>
-                </a>
-            </div>
-            <div class="new-container-right-post">
-                <a href="./../math/math-important-formulas.html">
-                    <div class="new-container-right-post-image">
-                        <img src="./../math/math-formulae/formulae.jpg">
-                    </div>
-                    <div class="new-container-right-post-discription">
-                        <h3>Math Important formulae</h3>
-                    </div>
-                </a>
-            </div>
         </div>
+
+
+
+
+        <!-----------------------------Right-->
+        <div class="himalstha-right-sidebar" id="right-sidebar">
+            <body-right></body-right>
+        </div>
+
     </div>
 
 

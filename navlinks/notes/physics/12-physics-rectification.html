@@ -36,12 +36,8 @@
 
     <div class="himalstha-main-container">
 
-
-        <div class="sub-navbar">
-            <button onclick="showleftSidebar()" id="lbar">Short cuts</button>
-            <button onclick="showMainContent()" id="mbar" class="mystyle">Feeds</button>
-            <button onclick="showRightSidebar()" id="rbar">Events</button>
-        </div>
+        <sub-nav>
+        </sub-nav>
 
 
         <!-----------------------------left-->
@@ -137,72 +133,8 @@
 
 
         <!-----------------------------Right-->
-
         <div class="himalstha-right-sidebar" id="right-sidebar">
-
-
-            <div class="right-sidebar-title">
-                <h4>Up Comming Events</h4><a>See more</a>
-            </div>
-
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>16</h3>
-                    <span>January</span>
-                </div>
-                <div class="right-event">
-                    <h4> Martin Luther King Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
-            </div>
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>19</h3>
-                    <span>January</span>
-                </div>
-                <div class="right-event">
-                    <h4>Confederate Heroes' Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
-            </div>
-            <div class="side-bar-event">
-                <div class="left-event">
-                    <h3>27</h3>
-                    <span>January</span>
-                </div>
-                <div class="right-event">
-                    <h4>
-                        International Holocaust Remembrance Day</h4>
-                    <p><ion-icon name="location-outline"></ion-icon>World</p>
-                    <a href="#"> More info</a>
-                </div>
-            </div>
-
-
-
-
-
-            <div class="right-sidebar-title">
-                <h4>To do List</h4><a>See more</a>
-            </div>
-            <div class="side-bar-event">
-                <iframe id="todolist" src="./../../todolist.html" width="350" height="300" frameborder="0"></iframe>
-            </div>
-
-
-
-
-
-            <div class="right-sidebar-title" id="add">
-                <h4>Advertisement</h4><a onclick="closeAdd()"><ion-icon name="close-outline"></ion-icon></a>
-            </div>
-            <img src="./img/ncell-1.jpg" class="adds-img">
-
-            <div class="right-sidebar-title">
-                <h4>Conversations</h4><a><ion-icon name="close-outline"></ion-icon></a>
-            </div>
+            <body-right></body-right>
         </div>
 
     </div>
