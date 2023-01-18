@@ -5,7 +5,7 @@ class MyComponent extends HTMLElement {
     <div class="nanobar my-class" id="my-id" style="position: fixed;">
     <div class="bar"></div>
     </div>
-    <a href="./../index.html" class="logo">    <img src="./../../../../img/dark-logo.png" alt="">
+    <a href="./../../../../../index.html" class="logo">    <img src="./../../../../img/dark-logo.png" alt="">
 himalstha<span>.com.np</span></a>
     <nav class="navbar">
       <ul class="navbar-list">
@@ -33,11 +33,11 @@ class faceLeft extends HTMLElement {
             </div>
             <div class="left-sidebar-shortcut-link">
                 <p>Your Shortcuts</p>
-                <a href="./../../../../../navlinks/notes/computer/c-programming.html"><img src="./../../notes/computer/c1.jpg" alt="">Grade 12
+                <a href="./../../../../../navlinks/notes/computer/c-programming.html"><img src="./../../../../../../notes/computer/c1.jpg" alt="">Grade 12
                     C-programming Project</a>
-                <a href="./../../../../../../navlinks/notes/math/12-math-syllabus.html"><img src="./../../img/chemistry.jpg" alt="">Grade 12 Math
+                <a href="./../../../../../../navlinks/notes/math/12-math-syllabus.html"><img src="./../../../../../img/chemistry.jpg" alt="">Grade 12 Math
                     syllabus</a>
-                <a href="./../../../../../navlinks/notes/physics/12-physics-syllabus.html"><img src="./../../notes/physics/ac-generator.jpg"
+                <a href="./../../../../../navlinks/notes/physics/12-physics-syllabus.html"><img src="./../../../../../notes/physics/ac-generator.jpg"
                         alt="">Grade 12 Physics syllabus</a>
             </div>
     `;
@@ -176,7 +176,7 @@ class overLays extends HTMLElement {
 
       <li class="animals">
         <div style="display:none;">neb physics ac generator acgenerator grade 12 grade12 ac generator notes </div>
-        <div class="list-tm"><img src="./../../../../../img/12physics.png" alt=""><a href="./../../../../../navlinks/notes/physics/12-physics-ac-generators.html">Ac Generator grade 12 Physics Notes<ion-icon name="search-outline"></ion-icon></a></div>
+        <div class="list-tm"><img src="./../../../../../img/12physics.png" alt=""><a href="./../../../../../navlinks/notes/physics/12-physics-electromagnetic-induction.html#ac-generator">Ac Generator grade 12 Physics Notes<ion-icon name="search-outline"></ion-icon></a></div>
       </li>
 
       
@@ -204,7 +204,7 @@ class overLays extends HTMLElement {
 
    <li class="animals">
         <div style="display:none;">neb physics self inductance  grade 12 self inductance notes </div>
-        <div class="list-tm"><img src="./../../../../../img/12physics.png" alt=""><a href="./../../../../../navlinks/notes/physics/12-physics-self-inductance.html">Self Inductance  grade 12 Physics Notes<ion-icon name="search-outline"></ion-icon></a></div>
+        <div class="list-tm"><img src="./../../../../../img/12physics.png" alt=""><a href="./../../../../../navlinks/notes/physics/12-physics-electromagnetic-induction.html#self-inductance">Self Inductance  grade 12 Physics Notes<ion-icon name="search-outline"></ion-icon></a></div>
       </li>
       
          <li class="animals">
@@ -252,8 +252,21 @@ class overLays extends HTMLElement {
 
        <li class="animals">
          <div style="display:none;">neb chemistry volumetric analysis neb grade12 ionic equilibrium</div>
-         <div class="list-tm"><img src="./../../../../../img/12chemistry.png" alt=""><a href="./../../../../../navlinks/notes/chemistry/12-volumetric-analysis.html">Volumetric analysis  grade 12<ion-icon name="search-outline"></ion-icon></a></div>
+         <div class="list-tm"><a href="./../../../../../navlinks/notes/chemistry/12-volumetric-analysis.html">Volumetric analysis  grade 12<ion-icon name="search-outline"></ion-icon></a></div>
       </li>
+   <li class="animals">
+         <div style="display:none;">activation energy thresold energy activated complex rate of reaction arrhenius equation neb chemistry collision theory neb </div>
+         <div class="list-tm"><a href="./../../../../../../../navlinks/notes/chemistry/12-chemistry-chemical-kinetics.html">Chemical kinetics grade 12<ion-icon name="search-outline"></ion-icon></a></div>
+      </li>
+      <li class="animals">
+         <div style="display:none;">activation energy thresold energy activated complex rate of reaction arrhenius equation neb chemistry collision theory neb </div>
+         <div class="list-tm"><a href="./../../../../../../../navlinks/notes/chemistry/12-chemistry-chemical-kinetics.html#colisiontheory">Collision theory grade 12<ion-icon name="search-outline"></ion-icon></a></div>
+      </li>
+      <li class="animals">
+         <div style="display:none;"> nitrocompounds nitro compounds nitro preparation of alkanes nitro alkyne nitro alkene nitro benzene preparation of nitroalkanes neb Grade 12 neb </div>
+         <div class="list-tm"><a href="./../../../../../../../navlinks/notes/chemistry/12-chemistry-nitro-compounds.html">Nitro compounds grade 12<ion-icon name="search-outline"></ion-icon></a></div>
+      </li>
+
 
        <li class="animals">
         <div style="display:none;">neb </div>

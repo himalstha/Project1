@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>404 Error Page | CodingNepal</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 - Himal shrestha</title>
+    <link rel="stylesheet" href="./../../../../../css/style.css" />
+    <link rel="shortcut icon" type="x-icon" href="./img/Untitled-1.png">
+    <link rel="stylesheet" href="./../../../../../css/footer.css" />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9466406569025315"
+        crossorigin="anonymous"></script>
+    <script type="module" src="./../../../../../../javascript/hf.js"></script>
+    <script src="./../../../../../../../nanobar-master/nanobar-master/nanobar.min.js"></script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-
-        * {
-            margin: 0;
-            padding: 0;
-            outline: none;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            height: 100vh;
-            background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
-            background-size: 400%;
-        }
-
         #error-page {
             position: absolute;
             top: 10%;
@@ -40,9 +34,11 @@
         }
 
         .content h2.header {
+
             font-size: 18vw;
             line-height: 1em;
             position: relative;
+            box-shadow: none;
         }
 
         .content h2.header:after {
@@ -55,7 +51,6 @@
             background-size: 400%;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
-            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.25);
             animation: animate 10s ease-in-out infinite;
         }
 
@@ -133,23 +128,57 @@
 </head>
 
 <body>
-    <div id="error-page">
-        <div class="content">
-            <h1>himalstha.com.np</h1>
-            <h2 class="header" data-text="404">
-                404
-            </h2>
-            <h4 data-text="Opps! Page not found">
-                Opps! Page not found
-            </h4>
-            <p>
-                Sorry, the page you're looking for doesn't exist. If you think something is broken, report a problem.
-            </p>
-            <div class="btns">
-                <a href="https://www.himalstha.com.np/">return home</a>
+
+    <!---------------------------------------loader-->
+    <div id="preloder">
+    </div>
+
+    <!----------------------------------header-->
+    <header class="header" id="myHeader">
+        <header-links>
+        </header-links>
+        <div class="mobile-navbar-btn">
+            <ion-icon name="menu" class="mobile-nav-icon"></ion-icon>
+            <ion-icon name="close" class="mobile-nav-icon"></ion-icon>
+        </div>
+    </header>
+
+    <body-overlays></body-overlays>
+    <div style="height: 100vh;">
+        <div id="error-page">
+            <div class="content">
+                <h1>himalstha.com.np</h1>
+                <h2 class="header" data-text="404">
+                    404
+                </h2>
+                <h4 data-text="Opps! Page not found">
+                    Opps! Page not found
+                </h4>
+                <p>
+                    Sorry, the page you're looking for doesn't exist. If you think something is broken, report a
+                    problem.
+                </p>
+                <div class="btns">
+                    <a href="https://www.himalstha.com.np/">return home</a>
+                </div>
             </div>
         </div>
     </div>
+    <!----------------------------------body----->
+
+    <!-----------footer-->
+
+    <footer-last>
+    </footer-last>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script type='text/javascript' src="./../../../../../../javascript/index.js"></script>
+
+
+    <script>
+    </script>
+
 </body>
 
 </html>

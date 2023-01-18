@@ -484,10 +484,12 @@ section.index-body{
 .text-container-m h3,
 h4,
 span,
-h2 {
-  padding-top: 0px;
+h2{
+  padding-top: 30px;
 }
-
+.text-container-m p{
+  padding-top: 100px;
+}
 
 .text-container-m ol {
   list-style-type: disc;
@@ -826,7 +828,6 @@ position: fixed;
   margin-top: 1rem;
   width: 100%;
   display: block;
-  z-index: 99;
 }
 
 .search-container form {
@@ -1497,8 +1498,12 @@ a.x-read_more:hover {
   place-items: center;
 }
 #progress-value ion-icon{
+  position: absolute;
   color: rgb(255, 255, 255);
   font-size: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 
 
@@ -1509,7 +1514,6 @@ a.x-read_more:hover {
   background-size: cover;
   background-position: center;
   position: relative;
-  top: -6rem;
 }
 
 .bbg-img::before {
