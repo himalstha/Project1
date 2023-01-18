@@ -13,9 +13,21 @@ html {
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
-
+:root {
+  --primary-color: #003439;
+  --primary-shades: #00070b;
+  --para-color: #80849c;
+  --helper-color: #12c4fa;
+  --white: #fff;
+  --bg-color: #f8fff736;
+  --containerBg: rgb(237, 250, 255);
+  --containerListBg: rgb(255, 245, 245);
+  --containerBgText: rgb(9, 13, 14);
+  --containerListBgText: rgb(33, 28, 28);
+  --link-color: rgb(0, 150, 55);
+}
 body {
-  background-color: var(--white);
+  background-color:var(--bg-color);
 }
 
 .my-class .bar {
@@ -43,17 +55,8 @@ body {
   background: var(--primary-color);
 }
 
-:root {
-  --primary-color: #003439;
-  --primary-shades: #00070b;
-  --para-color: #80849c;
-  --helper-color: #12c4fa;
-  --white: #fff;
-  --bg-color: #e6e6eb;
-  --containerBg:rgb(152, 224, 255);
-  --containerListBg:rgb(255, 219, 219);
-  --containerBgText:rgb(9, 13, 14);
---containerListBgText: rgb(33, 28, 28);
+.dark{
+  --link-color: rgb(255, 255, 255);
 }
 a {
   text-decoration: none;
@@ -90,7 +93,6 @@ h4 {
  link:https://www.youtube.com/thapatechnical -->
 ------------------------- */
 .header {
-  position: sticky;
   padding: 5px 0;
   top: 0;
   width: 100%;
@@ -822,7 +824,6 @@ position: fixed;
 
 .search-container {
   margin-top: 1rem;
-  position: fixed;
   width: 100%;
   display: block;
   z-index: 99;
@@ -885,7 +886,7 @@ position: fixed;
   visibility:visible;
   flex-direction: column;
     box-shadow: 1px 1px 10px black;
-
+    z-index: 9999;
 }
 .search-container .js-is-hidden .ol-list{
 display: none;
@@ -897,25 +898,20 @@ display: none;
   text-align: left;
   background-color:var(--white);
   height: 100%;
-  justify-content: left;
 }
 .search-container .list-tm:hover{
   cursor: pointer;
   background-color: #80849c;
 }
 .search-container img {
-  flex-basis: 20%;
-  height: 7rem;
-  width: 7rem;
-  object-fit: cover;
-  box-shadow: 1px 1px 10px black;
+  display: none;
 
 }
 
 .search-container a {
-  padding-left: 15px;
+  padding: 15px;
   padding-right: 10px;
-  flex-basis: 80%;
+  flex-basis: 98%;
   font-size: 16px;
   align-content: center;
   display: flex;
@@ -930,7 +926,7 @@ display: none;
 @media (max-width:980px) {
 
   .search-container {
-  }
+position: relative;  }
 .search-container form{
 }
   .search-container form button {
@@ -963,7 +959,7 @@ border: 3px solid var(--helper-color);    }
 .navlinks-syllabus-container ol {
   margin-top: 10px;
   box-shadow: 1px 1px 5px black;
-  width: 60%;
+  width: 100%;
   min-width: 320px;
 }
 
@@ -1032,9 +1028,8 @@ border: 3px solid var(--helper-color);    }
 }
 
             .navlinks-notes-container {
+              text-align: center;
               padding: 1% 0;
-              display: flex;
-              flex-wrap: wrap;
               justify-content: center;
               align-self: center;
               cursor: pointer;
@@ -1044,10 +1039,8 @@ border: 3px solid var(--helper-color);    }
             .navlinks-notes-container ol {
               margin-top: 10px;
               box-shadow: 1px 1px 5px black;
-              min-width: 320px;
             }
             .navlinks-notes-container ol:first-child{
-              width: 100%;
               display: flex;
               justify-content: space-around;
               box-shadow: none;
@@ -1055,6 +1048,9 @@ border: 3px solid var(--helper-color);    }
             .navlinks-notes-container ol li {
               padding: 10px 20px;
               font-size: 20px;
+            }
+            .navlinks-notes-container ol li a{
+              color:var(--link-color);
             }
             @media(max-width:980px){
              .navlinks-notes-container ol{
@@ -1067,16 +1063,9 @@ border: 3px solid var(--helper-color);    }
               background-color: var(--containerBg);
             }
       
-            .navlinks-notes-container ol li:nth-child(even) a {
-              color: var(--containerBgText);
-            }
       
             .navlinks-notes-container ol li:nth-child(odd) {
               background-color: var(--containerListBg);
-            }
-      
-            .navlinks-notes-container ol li:nth-child(odd) a {
-              color: var(--containerListBgText);
             }
       
             .navlinks-notes-container ol li:first-child {
@@ -1084,11 +1073,9 @@ border: 3px solid var(--helper-color);    }
               background-color: var(--primary-color);
               color: var(--white);
             }
-                        .navlinks-notes-container ol li:first-child a{
-              color: var(--white);
-                        }
             .navlinks-notes-container ol li:hover {
-              background-color: #80849c;
+              background-color: #e0e0e0;
+              
             }
             .navlinks-notes-container ol li a:hover{
               text-decoration: underline;
@@ -1108,27 +1095,29 @@ facebook clone
 .himalstha-main-container {
   display: flex;
   justify-content: space-between;
-  padding: 13px 0.5%;
+  padding: 0px 0.5%;
   font-size: 13px;
 }
 
 .himalstha-left-sidebar {
-  flex-basis: 25%;
+  display: block;
+  flex-basis: 20%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
   height: 90vh;
-  overflow-y: scroll;
+  overflow-y: hidden;
   background-color: ;
-  padding: 20px;
+  padding: 0px 10px;
 }
 
 .himalstha-right-sidebar {
-  flex-basis: 25%;
+  display: block;
+  flex-basis: 20%;
   position: sticky;
   top: 70px;
   align-self: flex-start;
-  padding: 20px;
+  padding: 10px;
   border-radius: 4px;
   height: 90vh;
   overflow-y: hidden;
@@ -1136,11 +1125,11 @@ facebook clone
 }
 
 .himalstha-right-sidebar:hover {
-  overflow-y: scroll;
+  overflow-y: hidden;
 }
 
 .himalstha-main-content {
-  flex-basis: 47%;
+  flex-basis: 55%;
 
 }
 
@@ -1165,13 +1154,12 @@ facebook clone
 .left-sidebar-imp-link a:hover,
 .left-sidebar-shortcut-link a:hover {
 
-  background-color: rgb(202, 202, 202);
+  background-color: rgb(215, 215, 215);
 
 }
 
 .left-sidebar-imp-link a:last-child {
-  color: #12c4fa;
-  background-color: white;
+  color:var(--link-color);
 }
 
 .left-sidebar-imp-link a:last-child:hover {
@@ -1198,7 +1186,7 @@ facebook clone
 
 .right-sidebar-title {
   padding-top: 5px;
-  border-top: 1px solid rgb(0, 0, 0);
+  border-top: 1px solid var(--primary-shades);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1211,14 +1199,14 @@ facebook clone
 }
 
 .right-sidebar-title h4 {
-  color: #393939;
+  color: var(--primary-shades);
   font-weight: 600;
   font-size: 16px;
 }
 
 .right-sidebar-title a {
   text-decoration: none;
-  color: var(--helper-color);
+  color: var(--link-color);
   font-size: 12px;
 }
 
@@ -1247,7 +1235,7 @@ facebook clone
 .side-bar-event a {
   font-size: 12px;
   text-decoration: none;
-  color: var(--helper-color);
+  color: var(--link-color);
 }
 
 .left-event span {
@@ -1346,10 +1334,10 @@ facebook clone
 .x-card {
   overflow: hidden;
   padding: 20px;
-  background-color: var(--bg-color);
-  border-radius: 30px;
+border: 0.1px solid var(--primary-shades);  
+border-radius: 30px;
   text-align: center;
-  box-shadow: 0px 0px 10px var(--bg-color);
+  box-shadow: 1px 0px 3px var(--primary-color);
 }
 .x-card:hover{
     box-shadow:none;
@@ -1492,13 +1480,14 @@ a.x-read_more:hover {
   position: fixed;
   bottom: 20px;
   right: 10px;
-  height: 50px;
-  width: 50px;
+  height: 35px;
+  width: 35px;
   display: block;
   place-items: center;
   border-radius: 50%;
   cursor: pointer;
   transition: all 1s ease-in;
+  z-index: 99999;
 }
 
 #progress-value {
@@ -1509,7 +1498,7 @@ a.x-read_more:hover {
 }
 #progress-value ion-icon{
   color: rgb(255, 255, 255);
-  font-size: 25px;
+  font-size: 20px;
 }
 
 
@@ -1648,7 +1637,7 @@ a.x-read_more:hover {
     font-size: 30px;
   }
 .header {
-  position: fixed;
+  position: sticky;
   height: 5rem;
   padding: 2%;
   display: flex;
@@ -1802,7 +1791,6 @@ img.portfolio-img2 {
 }
   @media (max-width: 980px) {
     body {
-      margin-top: 4rem;
       overflow-x: hidden;
     }
 

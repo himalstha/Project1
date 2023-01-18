@@ -45,7 +45,6 @@ class faceLeft extends HTMLElement {
 }
 customElements.define('body-left', faceLeft);
 
-
 class faceRight extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
@@ -286,7 +285,6 @@ class overLays extends HTMLElement {
     <div id="progress">
     <span id="progress-value"><ion-icon name="chevron-up-outline"></ion-icon></span>
   </div>
-<div style="height: 6rem;"></div>
     `;
   }
 }
