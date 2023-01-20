@@ -47,13 +47,77 @@
 
             <div class="text-container-m">
                 <a href="../../notes.html">Notes</a>
-                <ion-icon name="chevron-forward-sharp"></ion-icon> <a href="12-computer-c-programming.html">Grade 12 C
+                <ion-icon name="chevron-forward-sharp"></ion-icon> <a href="c-programming.html">Grade 12 C
                     Programming</a>
                 <br><br>
+                <div class="table-of-programming">
+                    <table border="" cellpadding="0" cellspacing="0" style="width:100%; padding: 0;">
+                        <thead>
+                            <tr>
+                                <th scope="col" style="text-align: center;">C-programming</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table border="1" cellpadding="0" cellspacing="0" style="width:100%;">
+                                        <tbody>
+                                            <tr>
+                                                <td style="text-align: center;">Simple method</td>
+                                                <td style="text-align: center;">&nbsp;Using Function</td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#sortInt">1. Sorting Integer</a></td>
+                                                <td><a href="#funSumth">8. Sum of three number</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#palin"> 2. Check palindrome or not</a></td>
+                                                <td><a href="#funGreatth"> 9. Greatest among three number</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#arm"> 3. Check Armstrong or not</a></td>
+                                                <td><a href="#funSumNatural"> 10. Sum of n natural number</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#sortAlpha"> 4. Sorting array in alphabetical order</a>
+                                                </td>
+                                                <td><a href="#funSi"> 11. Simple Interest</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#sumNatural"> 5. Sum of n natural number</a></td>
+                                                <td><a href="#funCheckPF"> 12. Check student is pass or fail</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#sumDigit"> 6. Sum of entered digits</a></td>
+                                                <td><a href="#funFactorial"> 13. Find factorial of entered number</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a href="#salgth"> 7. Count how many have salary greater<br />
+                                                        than 3000</a></td>
+                                                <td><a href="#funArm"> 14. Check armstrong or not.</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td scope="col" style="text-align: center;">Function call by Reference</td>
+                            </tr>
+                            <tr>
+                                <td style="padding: 0;">
+                                    <table>
+                                        <tr>
+                                            <td><a href="#funcrAddNum">15. Add two number</a></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
                 <p>
-
-
-                <h3>1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
+                <h3 id="sortInt">1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
                 </h3>
                 <pre>
                     <code class="language-c">
@@ -99,7 +163,7 @@
             </code>
         </pre>
 
-                <h3>2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
+                <h3 id="palin">2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
                 </h3>
                 <pre>
                     <code class="language-c">
@@ -126,7 +190,7 @@ void main(){<br />
                     </code>
                 </pre>
 
-                <h3>3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
+                <h3 id="arm">3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
                 </h3>
                 <pre>
                     <code>
@@ -153,7 +217,7 @@ getch();<br />
                     </code>
                 </pre>
 
-                <h3>4. WAP TO sort an array in alphabetical order.
+                <h3 id="sortAlpha">4. WAP TO sort an array in alphabetical order.
                 </h3>
                 <pre>
                     <code class="language-c">
@@ -189,7 +253,7 @@ int main()<br />
                     </code>
                 </pre>
                 <br>
-                <h3>5. WAP TO print sum of n natural number.
+                <h3 id="sumNatural">5. WAP TO print sum of n natural number.
                 </h3>
                 <pre>
                     <code class="language-c">
@@ -206,7 +270,7 @@ void main()<br />
 }</span>
                     </code>
                 </pre>
-                <h3>6. WAP to print sum of digits of Entered number.
+                <h3 id="sumDigit">6. WAP to print sum of digits of Entered number.
                 </h3>
                 <pre>
                     <code>
@@ -227,7 +291,7 @@ getch();<br />
 }</span>
                     </code>
                 </pre>
-                <h3>7. WAP to take input of salary of n employee and count how manay of them have salary
+                <h3 id="salgth">7. WAP to take input of salary of n employee and count how manay of them have salary
                     greater
                     than 30000.
                 </h3>
@@ -254,7 +318,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 }</span>
                     </code>
                 </pre>
-                <h3>8. Write a program to find sum of three integer using function.</h3>
+                <h3 id="funSumth"> 8. Write a program to find sum of three integer using function.</h3>
                 <pre>
     <code class="language-c">
 <p>// To find the sum of three digits using function</p>
@@ -284,7 +348,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3>9. WAP to print greatest among 3 integer using function.</h3>
+                <h3 id="funGreatth">9. WAP to print greatest among 3 integer using function.</h3>
                 <pre>
     <code class="language-c">
 <p>// To print greatest among three integer number using function</p>
@@ -326,7 +390,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3>
+                <h3 id="funSumNatural">
                     10. WAP to find sum of n natural number using function.
                 </h3>
                 <pre>
@@ -361,7 +425,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3>
+                <h3 id="funSi">
                     11. WAP to find Simple interest using function.
                 </h3>
                 <pre>
@@ -392,7 +456,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3>12. WAP to determine the student is pass or fail if pass marks is 40 using function.</h3>
+                <h3 id="funCheckPF">12. WAP to determine the student is pass or fail if pass marks is 40 using function.
+                </h3>
                 <pre>
     <code class="language-c">
 <p>// To determine the student is pass or fail if pass marks is 40 using function</p>
@@ -427,7 +492,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3>13. WAP to find factorial of entered number using function.</h3>
+                <h3 id="funFactorial">13. WAP to find factorial of entered number using function.</h3>
                 <pre>
     <code class="language-c">
 <p>// To find factorial of entered number</p>
@@ -461,7 +526,7 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3> 14. WAP to find wheather the number is armstrong or not using function.</h3>
+                <h3 id="funArm"> 14. WAP to find wheather the number is armstrong or not using function.</h3>
                 <pre>
     <code class="language-c">
         <p>// Find wheather the number is armstrong or not using function.</p>
