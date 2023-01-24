@@ -1,0 +1,85 @@
+:root {
+    --primary-color: #003439;
+    --primary-shades: #00070b;
+    --para-color: #80849c;
+    --helper-color: #12c4fa;
+    --white: #fff;
+    --bg-color: #f8fff736;
+    --containerBg: rgb(237, 250, 255);
+    --containerListBg: rgb(255, 245, 245);
+    --containerBgText: rgb(9, 13, 14);
+    --containerListBgText: rgb(33, 28, 28);
+    --link-color: rgb(0, 150, 55);
+}
+
+.programming-qsn{
+    padding: 0;
+    margin:0;
+}
+.programming-qsn h2{
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+.programming-qsn h3{
+    font-size: 18px;
+    margin: 15px 0 5px 0 ;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-shades);
+    color: var(--white);
+}
+.programming-qsn h4 {
+    width: fit-content;
+    padding: 0px 3px;
+    font-size: 18px;
+    color: var(--primary-shades);
+    background-color: rgb(184, 184, 184);
+}
+.programming-qsn a{
+    font-size: 15px;
+}
+.programming-qsn a:hover{
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.programming-ans {
+    border-top: 1px solid var(--primary-shades);
+    padding: 0;
+    margin-top: 10px;
+    padding-top: 10px;}
+
+.programming-ans h2 {
+    text-decoration: underline;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.programming-ans h3 {
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+    padding: 1px;
+    width: 100%;
+    text-align: center;
+    background-color: var(--primary-shades);
+    color: var(--white);
+}
+
+.programming-ans h4 {
+    width: fit-content;
+    padding: 0px 3px;
+    font-size: 18px;
+    color: var(--primary-shades);
+    background-color: rgb(184, 184, 184);
+}
+
+.programming-ans p{
+    font-size: 15px;
+}
+.programming-ans p.ans{
+    padding-left:30px;
+}

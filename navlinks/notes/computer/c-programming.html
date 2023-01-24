@@ -14,6 +14,7 @@
     <script type="module" src="./../../../../javascript/hf.js"></script>
     <script src="./../../../../nanobar-master/nanobar-master/nanobar.min.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/a11y-light.min.css">
+    <link rel="stylesheet" href="./../../../css/programming.css">
 </head>
 
 <body>
@@ -50,76 +51,1562 @@
                 <ion-icon name="chevron-forward-sharp"></ion-icon> <a href="c-programming.html">Grade 12 C
                     Programming</a>
                 <br><br>
-                <div class="table-of-programming">
-                    <table border="" cellpadding="0" cellspacing="0" style="width:100%; padding: 0;">
-                        <thead>
-                            <tr>
-                                <th scope="col" style="text-align: center;">C-programming</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table border="1" cellpadding="0" cellspacing="0" style="width:100%;">
-                                        <tbody>
-                                            <tr>
-                                                <td style="text-align: center;">Simple method</td>
-                                                <td style="text-align: center;">&nbsp;Using Function</td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#sortInt">1. Sorting Integer</a></td>
-                                                <td><a href="#funSumth">8. Sum of three number</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#palin"> 2. Check palindrome or not</a></td>
-                                                <td><a href="#funGreatth"> 9. Greatest among three number</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#arm"> 3. Check Armstrong or not</a></td>
-                                                <td><a href="#funSumNatural"> 10. Sum of n natural number</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#sortAlpha"> 4. Sorting array in alphabetical order</a>
-                                                </td>
-                                                <td><a href="#funSi"> 11. Simple Interest</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#sumNatural"> 5. Sum of n natural number</a></td>
-                                                <td><a href="#funCheckPF"> 12. Check student is pass or fail</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#sumDigit"> 6. Sum of entered digits</a></td>
-                                                <td><a href="#funFactorial"> 13. Find factorial of entered number</a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a href="#salgth"> 7. Count how many have salary greater<br />
-                                                        than 3000</a></td>
-                                                <td><a href="#funArm"> 14. Check armstrong or not.</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td scope="col" style="text-align: center;">Function call by Reference</td>
-                            </tr>
-                            <tr>
-                                <td style="padding: 0;">
-                                    <table>
-                                        <tr>
-                                            <td><a href="#funcrAddNum">15. Add two number</a></td>
-                                        </tr>
-                                    </table>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="programming-qsn">
+                    <h2>LAB WORK of C-Programming</h2>
+
+                    <h3><strong>Revision of class 11</strong></h3>
+
+                    <p><a href="#p1">1. WAP to find the greatest number among 3 number.</a></p>
+
+                    <p><a href="#p2">2. WAP to find the factorial of given number &#39;a&#39;.</a></p>
+
+                    <p><a href="#p3">3. WAP to calculate the sum of natural numbers up to n number.</a></p>
+
+                    <p><a href="#p4">4. WAP to take an integer input and find the reverse of that number.</a></p>
+
+                    <p><a href="#p5">5. WAP to find whether the number is palindrome or not.</a></p>
+
+                    <p><a href="#p6">6. WAP to find whether the number is armstrong or not.</a></p>
+
+                    <p><a href="#p7">7. WAP to take an integer array input having n numbers, and sort them in ascending
+                            order.</a></p>
+
+                    <p><a href="#p8">8. WAP to sort n number of employee in ascending order according to their name.</a>
+                    </p>
+
+                    <p><a href="#p9">9. WAP to take salary input of n employee and count how many of them have salary
+                            greater than or
+                            equal to 50,000.</a></p>
+
+                    <h3><strong>FUNCTIONS</strong></h3>
+
+                    <p><strong><u>Theory</u></strong></p>
+
+                    <p><a href="#q1">Q. Define functions, it&#39;s types, advantages, components.</a></p>
+
+                    <p><a href="#q2">Q. Explain types of User Define Function with example for each type. </a></p>
+
+                    <p><a href="#q3">Q. Define Call by value and Call by reference with example for each.</a></p>
+
+                    <p><strong><u>Programming</u></strong></p>
+
+                    <p><a href="#f1">1. Write a program to add two number using function</a></p>
+
+                    <p><a href="#f2">2. Write a program to add three number using function</a></p>
+
+                    <p><a href="#f3">3. Write a program to find area of rectangle using function </a></p>
+
+                    <p><a href="#f4">4. Write a program to find simple interest using function</a></p>
+
+                    <p><a href="#f5">5. WAP to determine whether the student is pass or fail using function</a></p>
+
+                    <p><a href="#f6">6. WAP to determine whether the number is odd or even using function </a></p>
+
+                    <p><a href="#f7">7. WAP to determine whether the number is positive or negative or zero using
+                            function</a></p>
+
+                    <p><a href="#f8">8. Write a program to find the greatest one among three number using function</a>
+                    </p>
+
+                    <p><a href="#f9">9. WAP to find the sum up to n natural number using function</a></p>
+
+                    <p><a href="#f10">10. WAP to find the factorial of n number using function</a></p>
+
+                    <p><a href="#f11">11.WAP to find a reverse of an integer number using function </a></p>
+
+                    <p><a href="#f12">12.WAP to find whether the number is palindrome or not using function (without
+                            return
+                            type)</a></p>
+
+                    <p><a href="#f13">13.WAP to find whether the number is palindrome or not using function (with return
+                            type)</a></p>
+
+                    <p><a href="#f14">14.WAP to find whether the number is Armstrong or not using function.</a></p>
+
+                    <h4><strong>FUNCTION AND ARRAY</strong></h4>
+
+                    <p><a href="#f15">15. WAP to sort the integer array in ascending order using function</a></p>
+
+                    <p><a href="#f16">16. WAP to take address input of n employee and arrange them in ascending order
+                            using
+                            function.</a>
+                    </p>
+
+                    <h4><strong>RECURSIVE FUNCTION</strong></h4>
+
+                    <p><u><strong>Theory</strong></u></p>
+
+                    <p><a href="#">Q. Define recursive function. </a></p>
+
+                    <p><a href="#">Q. Difference between iteration and recursive.</a></p>
+
+                    <p><u><strong>Programming</strong></u></p>
+
+                    <p><a href="#">1. WAP to find the factorial of n number using recursive function </a></p>
+
+                    <p><a href="#">2. WAP to find the sum up to n natural number using recursive function</a></p>
+
+                    <p><a href="#">3. WAP to display the nth term of Fibonacci series using recursive function </a></p>
+
+                    <p><a href="#">4. WAP to display the Fibonacci series upto n term using recursive function </a></p>
+
+                    <p><a href="#">5. WAP to find a reverse of an integer number using recursive function</a></p>
+
+                    <h3><strong>STRUCTURES</strong></h3>
+
+                    <p><u><strong>Theory</strong></u></p>
+
+                    <p><a href="#">Q. Define structure, initialization of structure and its size.</a></p>
+
+                    <p><a href="#">Q. Difference between array and structure.</a></p>
+
+                    <p><a href="#">Q. Difference between union and structure.</a></p>
+
+                    <p><u><strong>Programming</strong></u></p>
+
+                    <p><a href="#">1. WAP to enter roll no, gpa, name and address of a student in a structure and
+                            display the
+                            information.</a></p>
+
+                    <p><a href="#">2. WAP to demonstrate the use of nested structure.</a></p>
+
+                    <h4><strong>STRUCTURE AND ARRAY</strong></h4>
+
+                    <p><a href="#">3. WAP to enter name, grade, age and address of 10 students in a structure and
+                            display the
+                            information. (Suppl 2079) </a></p>
+
+                    <p><a href="#">4. Write a C program to enter name, address and salary of n employee and count how
+                            many of them have
+                            salary greater than 40,000</a></p>
+
+                    <p><a href="#">5. Write program a C to enter name, address and salary of n employee and display the
+                            details of
+                            employee having salary greater than 40,000 </a></p>
+
+                    <p><a href="#">6. Write a C program to enter name, address and salary of n employee and display them
+                            in ascending
+                            order according to their name. </a></p>
+
+                    <p><a href="#">7. Write a C program to enter name, address and salary of n employee and display them
+                            in ascending
+                            order according to the salary.</a></p>
+
+                    <p><a href="#">8. Write a C program to enter name, address and salary of n employee and display only
+                            those who live
+                            in Kathmandu. </a></p>
+
+                    <p><a href="#">9. Write a C program to enter id, name and percentage of n students and find out the
+                            highest
+                            percentage.</a></p>
+
+                    <p><a href="#">10. Write a C program to enter id, name and percentage of n students and display
+                            details about all of
+                            them having highest percentage.</a></p>
+
+                    <p><a href="#">11. Write a C program to store name and marks of all 6 subjects of n students and
+                            also calculate
+                            total marks and percentage. (Total marks is 100 for each subject)</a></p>
+
+                    <h4><strong>STRUCTURE AND FUNCTION</strong></h4>
+
+                    <p><a href="#">12. WAP to enter Roll Number, GPA, Name and Address of a student in a structure and
+                            display the
+                            information using function. </a></p>
+
+                    <p><a href="#">13. Write a C program to enter name, grade, age and address of 10 students in a
+                            structure and display
+                            the information using function. </a></p>
+
+                    <p><a href="#">14. Write a C program to enter id, name and percentage of n students and find out all
+                            of them having
+                            the highest percentage using function.</a></p>
                 </div>
-                <p>
-                <h3 id="sortInt">1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
-                </h3>
-                <pre>
+
+                <div class="programming-ans">
+                    <h2>LAB WORK of C-Programming </h2><span>Solution</span>
+
+                    <h3><strong>Revision of class 11</strong></h3>
+
+                    <p id="p1">1. WAP to find the greatest number among 3 number.</p>
+                    <pre>
+    <code class="language-c">
+<p>// To print greatest among three integer number</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int a, b, c;<br />
+&nbsp; &nbsp; printf(&quot;Enter any three number :&quot;) ;<br />
+&nbsp; &nbsp; scanf(&quot;%d %d %d&quot;,&amp;a, &amp;b, &amp;c);<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; if ( a &gt;= b &amp;&amp; a &gt;= c)<br />
+&nbsp; &nbsp; printf(&quot;The greatest number is : %d&quot;, a);<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; else if ( b &gt;= a &amp;&amp; b&gt;= c)<br />
+&nbsp; &nbsp; printf(&quot;The greatest number is : %d&quot;, b);<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; else&nbsp;<br />
+&nbsp; &nbsp; printf(&quot;The greatest number is : %d&quot;, c);<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; getch() ;<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+<output>
+    Output:
+    Enter any three number :12 42 65
+    The greatest number is : 65
+</output>
+
+    </code>
+</pre>
+                    <p id="p2">2. WAP to find the factorial of given number &#39;a&#39;.</p>
+                    <pre>
+    <code>
+<p>// To find the factorial of given number &#39;a&#39;</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, fac=1,i;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number :&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; fac = fac * i;<br />
+&nbsp; &nbsp;&nbsp;<br />
+&nbsp; &nbsp; printf (&quot;\n Factorial number is : %d &quot;,fac);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+<output>
+    OutPut:
+
+    Enter any number :6
+    Factorial number is : 720
+</output>
+    </code>
+</pre>
+
+                    <p id="p3">3. WAP to calculate the sum of natural numbers up to n number.</p>
+                    <pre>
+    <code>
+<p>// To calculate the sum of natural numbers up to n number.</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>void main()<br />
+{<br />
+&nbsp; &nbsp; int n, sum;<br />
+&nbsp; &nbsp; printf (&quot;Enter n number: &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; sum=n* (n+1)/2;<br />
+&nbsp; &nbsp; printf (&quot;Sum of natural numbers upto %d is %d&quot;,n, sum);<br />
+&nbsp; &nbsp; getch();<br />
+}</p>
+
+<output>
+Output:
+Enter n number: 9
+Sum of natural numbers upto 9 is 45
+</output>
+    </code>
+</pre>
+                    <p id="p4">4. WAP to take an integer input and find the reverse of that number.</p>
+                    <pre>
+    <code>
+<p>// To take an integer input and find the reverse of that number.</p>
+
+<p>#include &lt;stdio.h&gt;&nbsp;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>void main(){<br />
+&nbsp; &nbsp; int n, m, Rem, Rev=0;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number:&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; m=n;<br />
+&nbsp; &nbsp; while (n!=0){<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Rem=n%10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Rev=Rev*10+Rem;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n=n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; printf(&quot;Reverse of %d is : %d &quot;, m, Rev);<br />
+}</p>
+<output>
+OutPut:
+Enter any number:123
+Reverse of 123 is : 321
+</output>
+    </code>
+</pre>
+                    <p id="p5">5. WAP to find whether the number is palindrome or not.</p>
+                    <pre>
+    <code>
+<p>// To find whether the number is palindrome or not.</p>
+
+<p>#include &lt;stdio.h&gt;&nbsp;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>void main()<br />
+{<br />
+&nbsp; &nbsp; int n, m, Rem, Rev=0;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number:&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; m=n;<br />
+&nbsp; &nbsp; while (n!=0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Rem=n%10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Rev=Rev*10+Rem;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n=n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; if(Rev==m)<br />
+&nbsp; &nbsp; printf(&quot;Entered number is palindrome&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; printf(&quot;Entered number is not palindrome.&quot;);<br />
+&nbsp; &nbsp; getch();<br />
+}</p>
+<output>
+OutPut:
+Enter any number:14741
+Entered number is palindrome
+</output>
+    </code>
+</pre>
+                    <p id="p6">6. WAP to find whether the number is armstrong or not.</p>
+                    <pre>
+    <code>
+<p>// To find whether the number is armstrong or not.</p>
+
+<p>#include &lt;stdio.h&gt;&nbsp;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>void main()<br />
+{<br />
+&nbsp; &nbsp; int n, m, Rem, Arm=0;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number: &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; m=n;<br />
+&nbsp; &nbsp; while (n!=0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Rem=n%10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; Arm=Arm+(Rem*Rem*Rem);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n=n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; if (Arm==m)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Entered number is ARMSTRONG&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Entered number is not ARMSTRONG.&quot;);<br />
+&nbsp; &nbsp; getch();<br />
+}<br />
+&nbsp; &nbsp;&nbsp;</p>
+<output>
+Output:
+Enter any number: 153
+Entered number is ARMSTRONG
+</output>
+    </code>
+</pre>
+                    <p id="p7">7. WAP to take an integer array input having n numbers, and sort them in ascending
+                        order.</p>
+                    <pre>
+<code>
+<p>//&nbsp; To take an integer array input having n numbers, and sort them in ascending order.</p>
+
+<p>#include &lt;stdio.h&gt;&nbsp;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>void main()<br />
+{<br />
+&nbsp; &nbsp; int n, s = 0, i, j;<br />
+&nbsp; &nbsp; printf(&quot;How many number do you want to print: \t&quot;);&nbsp;<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; int a[n];<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Enter %d position number:&quot;,i);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;a[i]);<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; for(i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; for (j=i+1; j&lt;=n; j++)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if (a[i]&gt;a[j])<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; s = a[i] ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a[i] = a[j] ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; a[j] = s ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; for(i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;%d \t&quot;,a[i]) ;<br />
+&nbsp; &nbsp; getch ();<br />
+}</p>
+<output>
+Output:
+How many number do you want to print: 6
+Enter 1 position number:21
+Enter 2 position number:32
+Enter 3 position number:12
+Enter 4 position number:32
+Enter 5 position number:0
+Enter 6 position number:7
+0 7 12 21 32 32
+</output>
+</code>
+</pre>
+                    <p id="p8">8. WAP to sort n number of employee in ascending order according to their name.
+                    </p>
+                    <pre>
+    <code class="language-c">
+<p>//&nbsp; To sort n number of employee in ascending order according to their name.</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;&nbsp;<br />
+#include &lt;string.h&gt;</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n,i,j;<br />
+&nbsp; &nbsp; printf(&quot;How many word do you want to enter? &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; char name[100][n],s[100];<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++){<br />
+&nbsp; &nbsp; printf(&quot;Enter %d position name: &quot;,i);<br />
+&nbsp; &nbsp; scanf(&quot;%s&quot;, name[i]);<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; for(i=1; i&lt;=n; i++){<br />
+&nbsp; &nbsp; &nbsp; &nbsp; for (j=i; j&lt;=n; j++){&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(strcmp(name[i], name [j])&gt;0){<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(s, name[i]);&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(name[i],name[j]);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; strcpy(name[j],s);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; }&nbsp;<br />
+&nbsp; &nbsp; printf (&quot;The sorted name in alphabetical order are \n&quot;);&nbsp;<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; printf(&quot;%s \n&quot;, name[i]);<br />
+&nbsp; &nbsp; getch();<br />
+}</p>
+<output>
+Output:
+How many word do you want to enter? 5
+Enter 1 position name: banana
+Enter 2 position name: zebra
+Enter 3 position name: house
+Enter 4 position name: hoodie
+Enter 5 position name: laptop
+The sorted name in alphabetical order are
+banana
+hoodie
+house
+laptop
+zebra
+</output>
+    </code>
+</pre>
+                    <p id="p9">9. WAP to take salary input of n employee and count how many of them have salary
+                        greater than or
+                        equal to 50,000.</p>
+                    <pre>
+    <code>
+<p>//&nbsp; To take salary input of n employee and count how many of them have salary greater than or equal to 50,000.</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;<br />
+void main()<br />
+{<br />
+&nbsp; &nbsp; int n, count=0;<br />
+&nbsp; &nbsp; printf(&quot;How many employee? &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; int salary[n], i;<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Enter salary of %d position employee: &quot;,i);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;salary[i]);&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; if (salary[i]&gt;=50000)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; count = count +1;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; printf (&quot;The total number of employee that have more than 50k salary are: %d &quot;,count);<br />
+&nbsp; &nbsp; getch();<br />
+}</p>
+
+<output>
+Output:
+How many employee? 4
+Enter salary of 1 position employee: 75000
+Enter salary of 2 position employee: 9009
+Enter salary of 3 position employee: 46000
+Enter salary of 4 position employee: 50000
+The total number of employee that have more than 50k salary are: 2
+</output>
+    </code>
+</pre>
+                    <h3><strong>FUNCTIONS</strong></h3>
+
+                    <p><strong><u>Theory</u></strong></p>
+
+                    <p id="q1">Q. Define functions, it&#39;s types, advantages, components.</p>
+
+                    <p class="ans">
+                        Ans:<br>
+                        In the C programming language, a function is a block of code that performs a specific task and
+                        can be called
+                        multiple times in a program. Functions are defined using the keyword &quot;void&quot; or a
+                        specific data type (such
+                        as int, float, etc.), followed by the function name and a set of parentheses containing any
+                        input parameters. <br><br>
+                        In C programming, there are several types of functions, including:
+                        <br><br>
+                        1. User-defined functions: <br> These are functions that are created by the programmer to
+                        perform
+                        specific tasks. They can take
+                        input parameters and return a value or not.
+                        <br><br>
+                        2. Library functions: <br> These are pre-defined functions in the C library that can be called
+                        by the
+                        programmer to perform
+                        common tasks, such as input/output operations, mathematical calculations, and string
+                        manipulation.
+                        <br><br>
+                        3. Recursive functions: <br> These are functions that call themselves in order to solve a
+                        problem by
+                        breaking it down into
+                        smaller subproblems. Recursion is a powerful technique, but it can also be computationally
+                        expensive.
+                        <br><br>
+                        4. Inline functions: <br> These are functions that are substituted in the code where they are
+                        called.
+                        The compiler generates a
+                        copy of the function code at each point where the function is called, which can improve
+                        performance but also increases
+                        the size of the final executable.
+                        <br><br>
+                        5. Static functions: <br> These are functions that are only visible and accessible within the
+                        same file
+                        they are defined and not
+                        available to other files.
+                        <br><br>
+                        6. Extern functions: <br> These are functions that are defined in another file and can be
+                        accessed by
+                        other files by using the
+                        keyword extern.
+                        <br><br>
+                        <br>
+                        The advantages of using functions in C programming include:
+                        <br><br>
+                        1. Reusability: <br> Functions can be called multiple times in a program, making it easy to
+                        reuse the same code for different
+                        tasks. This helps to reduce the overall size of the program and makes it more efficient.
+                        <br><br>
+                        2. Modularity: Functions allow for the separation of code into logical units, making it easier
+                        to understand and maintain
+                        the program.
+                        <br><br>
+                        3. Abstraction: <br>Functions hide the details of how a task is performed, allowing the
+                        programmer to focus on the overall
+                        logic of the program.
+                        <br><br>
+                        4. Debugging:<br> Functions make it easier to locate and fix errors in the program. If an error
+                        occurs within a function, it
+                        can be isolated and corrected without affecting the rest of the program.
+                        <br><br>
+                        5. Testing: <br>Functions can be tested independently of the rest of the program, making it
+                        easier to ensure that they are
+                        working correctly.
+                        <br><br>
+                        6. Function calls can be used for making the program more readable and organized.
+                        <br><br>
+                        7. Function calls can also be used for breaking down a complex problem into smaller subproblems,
+                        making it easier to solve.
+
+                        <br><br><br>
+                        In C programming, the components of a function include:
+                        <br><br>
+                        1. Function name: <br> This is the name given to the function, which should be unique and
+                        meaningful.
+                        <br><br>
+                        2. Function prototype:<br> This is the declaration of the function that includes the function's
+                        name, return type, and input
+                        parameter list. The function prototype is typically placed at the beginning of the program or in
+                        a header file.
+                        <br><br>
+                        3. Function parameters:<br> These are the input variables that are passed to the function when
+                        it is called. The data type and
+                        number of parameters are specified in the function prototype.
+                        <br><br>
+                        4. Return type:<br> This is the data type of the value that is returned by the function. The
+                        return type is specified in the
+                        function prototype. Some functions do not return a value, in that case the return type is void.
+                        <br><br>
+                        5. Function body:<br> This is the block of code that defines the tasks that the function will
+                        perform. The function body is
+                        enclosed in curly braces and contains one or more statements.
+                        <br><br>
+                        6. Function call:<br> This is how the function is executed in the program. The function call
+                        consists of the function name
+                        followed by the required input parameters in parentheses.
+                        <br><br>
+                        7. Return statement:<br> This is the statement that ends the execution of the function and
+                        returns a value to the calling code.
+                        The return statement includes the value or expression to be returned.
+                        <br><br>
+                    </p>
+
+                    <p id="q2">Q. Explain types of User Define Function with example for each type. </p>
+                    <p class="ans">
+                        Ans:<br>
+                        In C programming, there are several types of user-defined functions, including:
+                        <br><br>
+                        1. Functions with no return type and no arguments: <br> These functions do not take any input
+                        and do not
+                        return any value. They are defined with the keyword "void" and do not have any input parameters.
+                        <br> Example:
+                    </p>
+                    <pre>
+                            <code>
+                        <p>void print_hello()</p>
+                            
+                        <p>{<br />
+                        &nbsp; &nbsp; printf(&quot;Hello World!\n&quot;);<br />
+                        }</p>
+                        
+                            </code>
+                        </pre>
+                    <p class="ans">
+                        This function simply prints "Hello World!" when it is called.
+                        <br><br>
+
+                        2. Functions with return type and no arguments: <br> These functions do not take any input, but
+                        return a
+                        value of a specific data type. They are defined with the specific data type and do not have any
+                        input parameters.
+                        <br>Example:
+                    </p>
+                    <pre>
+                            <code>
+                                int get_current_year() 
+                                {
+                                    return 2020;
+                                }
+                            </code>
+                        </pre>
+                    <p class="ans">
+
+                        This function returns the current year when it is called.
+                        <br><br>
+                        3. Functions with return type and arguments: <br> These functions take input in the form of
+                        arguments and return a value of a
+                        specific data type. They are defined with the specific data type and have input parameters.
+
+                        <br>Example:
+                    <pre>
+                            <code>
+                                float multiply(float a, float b) 
+                                {
+                                    return a * b;
+                                }
+                            </code>
+                        </pre>
+                    <p class="ans">
+                        This function takes two float numbers as input, multiply them and return the result.
+                        <br><br>
+                        4. Functions with no return type but arguments: <br> These functions take input in the form of
+                        arguments and do not return any
+                        value. They are defined with the keyword "void" and have input parameters.
+                        Example:
+                    </p>
+                    <pre>
+    <code>
+        void print_name(char* name) 
+        {
+            printf("My name is %s\n", name);
+        }
+    </code>
+</pre>
+                    <p class="ans">
+                        This function takes a character string as input and prints it as "My name is [input]".
+
+                    </p>
+
+                    <p id="q3">Q. Define Call by value and Call by reference with example for each.</p>
+                    <p class="ans">
+                        Ans:<br><br><br>
+                        1. Call by value: <br> Call by value is a method of passing arguments to a function in which the
+                        value of the
+                        argument is passed to the
+                        function. The function then operates on a copy of the argument, and any changes made to the
+                        argument within the function
+                        have no effect on the original variable outside of the function.
+                        <br>
+                        Example in C:
+                    </p>
+                    <pre>
+        <code>
+            #include &lt;stdio.h&gt;
+            
+                void increment(int x) {
+                x++;
+                }
+            
+                int main() {
+                int a = 5;
+                increment(a);
+                printf("%d\n", a); // Output: 5
+                }
+
+        </code>
+    </pre>
+                    <p class="ans">
+                        In this example, the variable 'a' is passed to the 'increment' function by value. The function
+                        increments the value of the
+                        copy of 'a' within the function, but the original variable 'a' remains unchanged.
+                    </p>
+                    <br><br>
+                    <p class="ans">
+                        2. Call by reference: <br>
+                        Call by reference is a method of passing arguments to a function in which the memory address of
+                        the argument is passed
+                        to the function. The function then operates on the original variable, and any changes made to
+                        the argument within the
+                        function are reflected in the original variable outside of the function.
+                        <br>
+                        Example in C:
+                    <pre>
+    <code>
+        #include &lt;stdio.h&gt;
+        
+            void increment(int *x) {
+            (*x)++;
+            }
+        
+            int main() {
+            int a = 5;
+            increment(&a);
+            printf("%d\n", a); // Output: 6
+            }
+
+    </code>
+</pre>
+                    </p>
+                    <p class="ans">
+                        In this example, the memory address of the variable 'a' is passed to the 'increment'function by
+                        reference. The function
+                        increments the value of the original variable 'a' within the function, and the new value is
+                        reflected in the original
+                        variable outside of the function.
+
+
+                    </p>
+                    <p><strong><u>Programming</u></strong></p>
+
+                    <p id="f1">1. Write a program to add two number using function</p>
+                    <pre>
+    <code>
+<p>//&nbsp; To add two number using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+    int sum(int, int);</p>
+
+<p>int main()<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int a, b, s ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Enter any two number : \t&quot;);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d %d&quot;, &amp;a, &amp;b);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; &nbsp; &nbsp; s=sum(a, b);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The sum of entered number is : %d &quot;,s) ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; return 0 ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; getch() ;<br />
+&nbsp; &nbsp; }</p>
+
+<p>// function defination<br />
+int sum(int a, int b)<br />
+&nbsp; &nbsp; {&nbsp; &nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int s = 0;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; s = a+b;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; return s ;<br />
+&nbsp; &nbsp; }&nbsp;</p>
+<output>
+Output:
+Enter any two number : 32 7
+The sum of entered number is : 39
+</output>
+
+    </code>
+</pre>
+                    <p id="f2">2. Write a program to add three number using function</p>
+                    <pre>
+    <code>
+<p>//&nbsp; To add three number using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+    int sum(int, int, int);</p>
+
+<p>int main()<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int a, b, c, s ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Enter any three number:\t&quot;);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d %d %d&quot;, &amp;a, &amp;b, &amp;c);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; &nbsp; &nbsp; s=sum(a, b, c);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The sum of entered number is : %d &quot;,s) ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; return 0 ;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; getch() ;<br />
+&nbsp; &nbsp; }</p>
+
+<p>// function defination<br />
+int sum(int a, int b, int c)<br />
+&nbsp; &nbsp; {&nbsp; &nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; int s = 0;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; s = a+b+c;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; return s ;<br />
+&nbsp; &nbsp; }</p>
+
+<output>
+Output:
+Enter any three number: 65 23 52
+The sum of entered number is : 140
+</output>
+    </code>
+</pre>
+                    <p id="f3">3. Write a program to find area of rectangle using function </p>
+                    <pre>
+    <code>
+<p>//&nbsp; To find area of rectangle using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+    #include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+    float area(float, float);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; float l, b, a;<br />
+&nbsp; &nbsp; printf(&quot;Enter length and Breadth of rectangle:\t&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%f %f&quot;, &amp;l, &amp;b);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; a = area (l, b);<br />
+&nbsp; &nbsp; printf(&quot;Area of rectangle is : %f &quot;, a);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}
+<p>// function defination<br />
+<p>float area(float l, float b)<br />
+{<br />
+&nbsp; &nbsp; float a;<br />
+&nbsp; &nbsp; a = l * b;&nbsp;<br />
+&nbsp; &nbsp; return a;<br />
+}</p>
+<output>
+Output:
+Enter length and Breadth of rectangle: 5 21.5
+Area of rectangle is : 107.500000
+</output>
+    </code>
+</pre>
+
+                    <p id="f4">4. Write a program to find simple interest using function</p>
+                    <pre>
+    <code>
+<p>//&nbsp; To find simple interest using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+float simpleInterest(float, float, float);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; float p, t, r, si;<br />
+&nbsp; &nbsp; printf(&quot;Enter Principle, Time and Rate of interest:\t&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%f %f %f&quot;, &amp;p, &amp;t, &amp;r);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; si = simpleInterest(p, t, r);<br />
+&nbsp; &nbsp; printf(&quot;Simple Interest is : %f &quot;, si);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+float simpleInterest(float p, float t, float r)<br />
+{<br />
+&nbsp; &nbsp; float si;<br />
+&nbsp; &nbsp; si = ( p * t * r)/ 100;<br />
+&nbsp; &nbsp; return si;<br />
+}</p>
+<output>
+Output: 
+Enter Principle, Time and Rate of interest: 12000 3 15.2
+Simple Interest is : 5472.000000
+</output>
+    </code>
+</pre>
+                    <p id="f5">5. WAP to determine whether the student is pass or fail using function</p>
+                    <pre>
+    <code>
+<p>// To determine whether the student is pass or fail using function<br />
+
+#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+void check(float);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; float marks;<br />
+&nbsp; &nbsp; printf(&quot;Enter your marks:\t&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%f&quot;, &amp;marks);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; check (marks);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+void check(float marks)<br />
+{<br />
+&nbsp; &nbsp; if (marks &gt;= 40)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Passed&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Failed&quot;);<br />
+}</p>
+<output>
+Output:
+Enter your marks: 92
+Passed
+</output>
+    </code>
+</pre>
+                    <p id="f6">6. WAP to determine whether the number is odd or even using function </p>
+                    <pre>
+    <code>
+<p>// To determine whether the number is odd or even using function&nbsp;</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+void check(int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number:\t&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; check (n);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+void check(int n)<br />
+{<br />
+&nbsp; &nbsp; if (n % 2 == 0)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is even.&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is odd.&quot;);<br />
+}</p>
+<output>
+Output:
+Enter any number: 25489
+The number is odd.
+</output>
+    </code>
+</pre>
+                    <p id="f7">7. WAP to determine whether the number is positive or negative or zero using
+                        function</p>
+                    <pre>
+    <code>
+<p>// To determine whether the number is positive or negative or zero using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+void check(int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number:\t&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; check (n);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+void check(int n)<br />
+{<br />
+&nbsp; &nbsp; if (n &gt; 0)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is Positive.&quot;);<br />
+&nbsp; &nbsp; else if (n &lt; 0)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is Negative.&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is zero.&quot;);<br />
+}</p>
+<output>
+Output:
+Enter any number: -9
+The number is Negative.
+</output>
+    </code>
+</pre>
+                    <p id="f8">8. Write a program to find the greatest one among three number using function</p>
+                    <pre>
+    <code>
+<p>// To find the greatest one among three number using functionero using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+<p>int greatest(int, int, int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int a, b, c, g ;<br />
+&nbsp; &nbsp; printf(&quot;Enter any three number :&quot;) ;<br />
+&nbsp; &nbsp; scanf(&quot;%d %d %d&quot;,&amp;a, &amp;b, &amp;c);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; g = greatest( a, b, c );<br />
+&nbsp; &nbsp; printf(&quot;The greatest number is : %d&quot;, g);<br />
+&nbsp; &nbsp; getch() ;<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+<p>int greatest(int a, int b, int c)<br />
+{<br />
+&nbsp; &nbsp; int g;<br />
+&nbsp; &nbsp; if ( a &gt;= b &amp;&amp; a &gt;= c)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; g = a ;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; else if ( b &gt;= a &amp;&amp; b&gt;= c)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; g = b ;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; g = c ;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return g ;<br />
+}</p>
+<output>
+Output:
+Enter any three number : 23 34 12
+The greatest number is : 34
+</output>
+    </code>
+</pre>
+                    <p id="f9">9. WAP to find the sum up to n natural number using function</p>
+                    <pre>
+    <code>
+<p>// To find the sum up to n natural number using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+<p>int sum(int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, s;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number : &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; s = sum(n);<br />
+&nbsp; &nbsp; printf(&quot;\n Sum of natural number is : %d &quot;, s);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+<p>int sum(int n)<br />
+{<br />
+&nbsp; &nbsp; int i, s = 0;<br />
+&nbsp; &nbsp; for(i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; s = s + i;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return s;<br />
+}</p>
+<output>
+Output:
+Enter any number : 28
+Sum of natural number is : 406
+</output>
+    </code>
+</pre>
+                    <p id="f10">10. WAP to find the factorial of n number using function</p>
+                    <pre>
+    <code>
+<p>// To find the factorial of n number using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>// function declaration<br />
+<p>int factorial(int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, fac;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number :&quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; // function call<br />
+&nbsp; &nbsp; fac = factorial (n);<br />
+&nbsp; &nbsp; printf (&quot;\n Factorial number is : %d &quot;,fac);<br />
+&nbsp; &nbsp; getch ();<br />
+&nbsp; &nbsp; return 0;<br />
+}</p>
+
+<p>// function defination<br />
+<p>int factorial(int n)<br />
+{<br />
+&nbsp; &nbsp; int i, fac=1;<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; fac = fac * i;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return fac;<br />
+}</p>
+<output>
+Output:
+Enter any number :9
+Factorial number is : 362880
+</output>
+    </code>
+</pre>
+                    <p id="f11">11.WAP to find a reverse of an integer number using function </p>
+                    <pre>
+    <code>
+<p>// To find a reverse of an integer number using function</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>//function declaration<br />
+int reverse (int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int rev,n;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number : &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; //function call<br />
+&nbsp; &nbsp; rev = reverse (n);<br />
+&nbsp; &nbsp; printf(&quot;The reverse of the number is %d .&quot;, rev);<br />
+}</p>
+
+<p>//function defination<br />
+int reverse(int n)<br />
+{<br />
+&nbsp; &nbsp; int rem, rev = 0;<br />
+&nbsp; &nbsp; while (n != 0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rem = n % 10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rev = rev * 10 + rem;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n = n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return rev;<br />
+}</p>
+ <output>
+Output:
+Enter any number : 132156
+The reverse of the number is 651231 .
+ </output>
+    </code>
+</pre>
+                    <p id="f12">12.WAP to find whether the number is palindrome or not using function (without
+                        return
+                        type)</p>
+                    <pre>
+    <code>
+<p>// To find whether the number is palindrome or not using function (without return type)</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>//function declaration<br />
+void palindrome (int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number : &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; //function call<br />
+&nbsp; &nbsp; palindrome (n);<br />
+}</p>
+
+<p>//function defination<br />
+void palindrome (int n)<br />
+{<br />
+&nbsp; &nbsp; int rem, rev = 0, m;<br />
+&nbsp; &nbsp; m=n;<br />
+&nbsp; &nbsp; while (n != 0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rem = n % 10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rev = rev * 10 + rem;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n = n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; if (rev == m)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Number is palindrome.&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf (&quot;Number is not palindrome.&quot;);<br />
+}</p>
+
+<output>
+Output:
+Enter any number : 147521472
+Number is not palindrome.
+</output>
+    </code>
+</pre>
+                    <p id="f13">13.WAP to find whether the number is palindrome or not using function (with return
+                        type)</p>
+                    <pre>
+    <code>
+<p>// To find whether the number is palindrome or not using function (with return type)</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>//function declaration<br />
+int palindrome (int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, rev;<br />
+&nbsp; &nbsp; printf(&quot;Enter any number : &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; //function call<br />
+&nbsp; &nbsp; rev = palindrome (n);<br />
+&nbsp; &nbsp; if (rev == n)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;Number is palindrome.&quot;);<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf (&quot;Number is not palindrome.&quot;);<br />
+}</p>
+
+<p>//function defination<br />
+int palindrome (int n)<br />
+{<br />
+&nbsp; &nbsp; int rem, rev = 0;<br />
+&nbsp; &nbsp; while (n != 0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rem = n % 10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; rev = rev * 10 + rem;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n = n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return rev;<br />
+}</p>
+<output>
+Output:
+Enter any number : 195591
+Number is palindrome.
+</output>
+    </code>
+</pre>
+                    <p id="f14">14.WAP to find whether the number is Armstrong or not using function.</p>
+                    <pre>
+<code>
+<p>// To find whether the number is Armstrong or not using function.</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>//function declaration<br />
+int armstrong (int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, arm;<br />
+&nbsp; &nbsp; printf (&quot;Enter any number :&quot;);<br />
+&nbsp; &nbsp; scanf (&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; //function call<br />
+&nbsp; &nbsp; arm = armstrong(n);<br />
+&nbsp; &nbsp; if (arm == n)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is armstrong.&quot;);<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; else<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;The number is not armstrong.&quot;);<br />
+&nbsp; &nbsp; }<br />
+}</p>
+
+<p>//function defination<br />
+int armstrong(int n)<br />
+{<br />
+&nbsp; &nbsp; int arm =0, R;<br />
+&nbsp; &nbsp; while (n&gt;0)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; R = n % 10;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; arm = arm + R*R*R;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; n=n/10;<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; return arm;<br />
+}</p>
+<output>
+Output:
+Enter any number :153
+The number is armstrong.
+</output>
+</code>
+</pre>
+                    <h4><strong>FUNCTION AND ARRAY</strong></h4>
+
+                    <p id="f15">15. WAP to sort the integer array in ascending order using function</p>
+                    <pre>
+    <code>
+<p>// To sort the integer array in ascending order using function.</p>
+
+<p>#include &lt;stdio.h&gt;<br />
+#include &lt;conio.h&gt;</p>
+
+<p>//function declaration<br />
+void sorting (int[], int);</p>
+
+<p>int main()<br />
+{<br />
+&nbsp; &nbsp; int n, i, a[100];<br />
+&nbsp; &nbsp; printf(&quot;How many number do you want to enter? : &quot;);<br />
+&nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;n);<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf (&quot;Enter %d position number :&quot;, i);<br />
+&nbsp; &nbsp; &nbsp; &nbsp; scanf(&quot;%d&quot;, &amp;a[i]);<br />
+&nbsp; &nbsp; }<br />
+&nbsp; &nbsp; sorting (a, n);<br />
+&nbsp; &nbsp; printf(&quot;Array in ascending order is : \n&quot;);<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; printf(&quot;%d \t&quot;, a[i]);<br />
+&nbsp; &nbsp; }<br />
+}</p>
+
+<p>//function defination<br />
+void sorting(int a[100], int n)<br />
+{<br />
+&nbsp; &nbsp; int temp, i, j;<br />
+&nbsp; &nbsp; for (i=1; i&lt;=n; i++)<br />
+&nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; for (j=i; j&lt;n; j++)<br />
+&nbsp; &nbsp; &nbsp; &nbsp; {<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; if(a[i]&gt;a[j])<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; {&nbsp;&nbsp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;temp = a[i];<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[i] = a[j];<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;a[j] = temp;<br />
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; &nbsp; &nbsp; }<br />
+&nbsp; &nbsp; }<br />
+}</p>
+<output>
+Output:
+How many number do you want to enter? : 7
+Enter 1 position number :9
+Enter 2 position number :45
+Enter 3 position number :1
+Enter 4 position number :65
+Enter 5 position number :42
+Enter 6 position number :56
+Enter 7 position number :77
+Array in ascending order is :
+1 9 42 45 56 65 77
+</output>
+    </code>
+</pre>
+                    <p id="f16">16. WAP to take address input of n employee and arrange them in ascending order
+                        using
+                        function.
+                    </p>
+
+                    <h4><strong>RECURSIVE FUNCTION</strong></h4>
+
+                    <p><u><strong>Theory</strong></u></p>
+
+                    <p>Q. Define recursive function. </p>
+
+                    <p>Q. Difference between iteration and recursive.</p>
+
+                    <p><u><strong>Programming</strong></u></p>
+
+                    <p>1. WAP to find the factorial of n number using recursive function </p>
+
+                    <p>2. WAP to find the sum up to n natural number using recursive function</p>
+
+                    <p>3. WAP to display the nth term of Fibonacci series using recursive function </p>
+
+                    <p>4. WAP to display the Fibonacci series upto n term using recursive function </p>
+
+                    <p>5. WAP to find a reverse of an integer number using recursive function</p>
+
+                    <h3><strong>STRUCTURES</strong></h3>
+
+                    <p><u><strong>Theory</strong></u></p>
+
+                    <p>Q. Define structure, initialization of structure and its size.</p>
+
+                    <p>Q. Difference between array and structure.</p>
+
+                    <p>Q. Difference between union and structure.</p>
+
+                    <p><u><strong>Programming</strong></u></p>
+
+                    <p>1. WAP to enter roll no, gpa, name and address of a student in a structure and
+                        display the
+                        information.</p>
+
+                    <p>2. WAP to demonstrate the use of nested structure.</p>
+
+                    <h4><strong>STRUCTURE AND ARRAY</strong></h4>
+
+                    <p>3. WAP to enter name, grade, age and address of 10 students in a structure and
+                        display the
+                        information. (Suppl 2079) </p>
+
+                    <p>4. Write a C program to enter name, address and salary of n employee and count how
+                        many of them have
+                        salary greater than 40,000</p>
+
+                    <p>5. Write program a C to enter name, address and salary of n employee and display the
+                        details of
+                        employee having salary greater than 40,000 </p>
+
+                    <p>6. Write a C program to enter name, address and salary of n employee and display them
+                        in ascending
+                        order according to their name. </p>
+
+                    <p>7. Write a C program to enter name, address and salary of n employee and display them
+                        in ascending
+                        order according to the salary.</p>
+
+                    <p>8. Write a C program to enter name, address and salary of n employee and display only
+                        those who live
+                        in Kathmandu. </p>
+
+                    <p>9. Write a C program to enter id, name and percentage of n students and find out the
+                        highest
+                        percentage.</p>
+
+                    <p>10. Write a C program to enter id, name and percentage of n students and display
+                        details about all of
+                        them having highest percentage.</p>
+
+                    <p>11. Write a C program to store name and marks of all 6 subjects of n students and
+                        also calculate
+                        total marks and percentage. (Total marks is 100 for each subject)</p>
+
+                    <h4><strong>STRUCTURE AND FUNCTION</strong></h4>
+
+                    <p>12. WAP to enter Roll Number, GPA, Name and Address of a student in a structure and
+                        display the
+                        information using function. </p>
+
+                    <p>13. Write a C program to enter name, grade, age and address of 10 students in a
+                        structure and display
+                        the information using function. </p>
+
+                    <p>14. Write a C program to enter id, name and percentage of n students and find out all
+                        of them having
+                        the highest percentage using function.</p>
+                </div>
+                <div style="display: none;">
+                    <div class="table-of-programming">
+                        <table border="" cellpadding="0" cellspacing="0" style="width:100%; padding: 0;">
+                            <thead>
+                                <tr>
+                                    <th scope="col" style="text-align: center;">C-programming</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="padding: 0;">
+                                        <table border="1" cellpadding="0" cellspacing="0" style="width:100%;">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="text-align: center;">Simple method</td>
+                                                    <td style="text-align: center;">&nbsp;Using Function</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#sortInt">1. Sorting Integer</a></td>
+                                                    <td><a href="#funSumth">8. Sum of three number</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#palin"> 2. Check palindrome or not</a></td>
+                                                    <td><a href="#funGreatth"> 9. Greatest among three number</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#arm"> 3. Check Armstrong or not</a></td>
+                                                    <td><a href="#funSumNatural"> 10. Sum of n natural number</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#sortAlpha"> 4. Sorting array in alphabetical order</a>
+                                                    </td>
+                                                    <td><a href="#funSi"> 11. Simple Interest</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#sumNatural"> 5. Sum of n natural number</a></td>
+                                                    <td><a href="#funCheckPF"> 12. Check student is pass or fail</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#sumDigit"> 6. Sum of entered digits</a></td>
+                                                    <td><a href="#funFactorial"> 13. Find factorial of entered
+                                                            number</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td><a href="#salgth"> 7. Count how many have salary greater<br />
+                                                            than 3000</a></td>
+                                                    <td><a href="#funArm"> 14. Check armstrong or not.</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="col" style="text-align: center;">Function call by Reference</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 0;">
+                                        <table>
+                                            <tr>
+                                                <td><a href="#funcrAddNum">15. Add two number using function call by
+                                                        reference.</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <p>
+                    <h3 id="sortInt">1. WAP TO SORT AN INTEGER ARRAY IN ASCENDING ARRAY.
+                    </h3>
+                    <pre>
                     <code class="language-c">
 <p>// To sort an integer array in ascending order</p>
 
@@ -163,9 +1650,9 @@
             </code>
         </pre>
 
-                <h3 id="palin">2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
-                </h3>
-                <pre>
+                    <h3 id="palin">2. WAP TO CHECK THE ENTERED NUMBER IS PALINDROME OR NOT.
+                    </h3>
+                    <pre>
                     <code class="language-c">
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;&nbsp;<br />
 #include &lt;conio.h&gt;<br />
@@ -190,9 +1677,9 @@ void main(){<br />
                     </code>
                 </pre>
 
-                <h3 id="arm">3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
-                </h3>
-                <pre>
+                    <h3 id="arm">3. WAP TO CHECK THE ENTERED NUMBER IS ARMSTRONG OR NOT.
+                    </h3>
+                    <pre>
                     <code>
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;&nbsp;<br />
 #include &lt;conio.h&gt;<br />
@@ -217,9 +1704,9 @@ getch();<br />
                     </code>
                 </pre>
 
-                <h3 id="sortAlpha">4. WAP TO sort an array in alphabetical order.
-                </h3>
-                <pre>
+                    <h3 id="sortAlpha">4. WAP TO sort an array in alphabetical order.
+                    </h3>
+                    <pre>
                     <code class="language-c">
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
 #include &lt;conio.h&gt;&nbsp;<br />
@@ -252,10 +1739,10 @@ int main()<br />
 }</span>
                     </code>
                 </pre>
-                <br>
-                <h3 id="sumNatural">5. WAP TO print sum of n natural number.
-                </h3>
-                <pre>
+                    <br>
+                    <h3 id="sumNatural">5. WAP TO print sum of n natural number.
+                    </h3>
+                    <pre>
                     <code class="language-c">
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
 #include &lt;conio.h&gt;<br />
@@ -270,9 +1757,9 @@ void main()<br />
 }</span>
                     </code>
                 </pre>
-                <h3 id="sumDigit">6. WAP to print sum of digits of Entered number.
-                </h3>
-                <pre>
+                    <h3 id="sumDigit">6. WAP to print sum of digits of Entered number.
+                    </h3>
+                    <pre>
                     <code>
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
 #include &lt;conio.h&gt;<br />
@@ -291,11 +1778,11 @@ getch();<br />
 }</span>
                     </code>
                 </pre>
-                <h3 id="salgth">7. WAP to take input of salary of n employee and count how manay of them have salary
-                    greater
-                    than 30000.
-                </h3>
-                <pre>
+                    <h3 id="salgth">7. WAP to take input of salary of n employee and count how manay of them have salary
+                        greater
+                        than 30000.
+                    </h3>
+                    <pre>
                     <code class="language-c">
 <p>// To take input of salary of n employee and count how manay of them have salary greater than 30000</p>
 <span style="font-family:courier new,courier,monospace;">#include &lt;stdio.h&gt;<br />
@@ -318,8 +1805,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 }</span>
                     </code>
                 </pre>
-                <h3 id="funSumth"> 8. Write a program to find sum of three integer using function.</h3>
-                <pre>
+                    <h3 id="funSumth"> 8. Write a program to find sum of three integer using function.</h3>
+                    <pre>
     <code class="language-c">
 <p>// To find the sum of three digits using function</p>
 
@@ -348,8 +1835,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3 id="funGreatth">9. WAP to print greatest among 3 integer using function.</h3>
-                <pre>
+                    <h3 id="funGreatth">9. WAP to print greatest among 3 integer using function.</h3>
+                    <pre>
     <code class="language-c">
 <p>// To print greatest among three integer number using function</p>
 
@@ -390,10 +1877,10 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3 id="funSumNatural">
-                    10. WAP to find sum of n natural number using function.
-                </h3>
-                <pre>
+                    <h3 id="funSumNatural">
+                        10. WAP to find sum of n natural number using function.
+                    </h3>
+                    <pre>
     <code class="language-c">
 <p>// To find sum of n natural number using function</p>
 
@@ -425,10 +1912,10 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3 id="funSi">
-                    11. WAP to find Simple interest using function.
-                </h3>
-                <pre>
+                    <h3 id="funSi">
+                        11. WAP to find Simple interest using function.
+                    </h3>
+                    <pre>
     <code class="language-c"><p>// To find Simple interest using function</p>
 
 <p>#include &lt;stdio.h&gt;<br />
@@ -456,9 +1943,10 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
-                <h3 id="funCheckPF">12. WAP to determine the student is pass or fail if pass marks is 40 using function.
-                </h3>
-                <pre>
+                    <h3 id="funCheckPF">12. WAP to determine the student is pass or fail if pass marks is 40 using
+                        function.
+                    </h3>
+                    <pre>
     <code class="language-c">
 <p>// To determine the student is pass or fail if pass marks is 40 using function</p>
 
@@ -492,8 +1980,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3 id="funFactorial">13. WAP to find factorial of entered number using function.</h3>
-                <pre>
+                    <h3 id="funFactorial">13. WAP to find factorial of entered number using function.</h3>
+                    <pre>
     <code class="language-c">
 <p>// To find factorial of entered number</p>
 
@@ -526,8 +2014,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
     </code>
 </pre>
 
-                <h3 id="funArm"> 14. WAP to find wheather the number is armstrong or not using function.</h3>
-                <pre>
+                    <h3 id="funArm"> 14. WAP to find wheather the number is armstrong or not using function.</h3>
+                    <pre>
     <code class="language-c">
         <p>// Find wheather the number is armstrong or not using function.</p>
 
@@ -566,6 +2054,8 @@ printf (&quot;The total number of employee that have more than 30k salary are: %
 
     </code>
 </pre>
+                    </p>
+                </div>
             </div>
         </div>
 
