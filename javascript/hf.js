@@ -11,9 +11,10 @@ himalstha<span>.com.np</span></a>
       <ul class="navbar-list">
         <li><ion-icon name="moon-outline" class="fas"></ion-icon></li>
         <li><a href="./../../../../../index.html" class="navbar-link">home</a></li>
-        <li><a href="./../../../../../navlinks/notes.html" class="navbar-link"> Notes </a></li>
+        <li><a href="./../../../../../navlinks/notes.html" class="navbar-link"> E-Notes </a></li>
         <li><a href="./../../../../../navlinks/news.html" class="navbar-link"> News </a></li>
         <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
+        <li><a href="./../../../../../navlinks/aboutme.html" class="navbar-link"> About me </a></li>
      </ul>
     </nav>    
     `;

@@ -13,6 +13,7 @@
         crossorigin="anonymous"></script>
     <script type="module" src="./../javascript/hf.js"></script>
     <script src="./../nanobar-master/nanobar-master/nanobar.min.js"></script>
+    <link rel="stylesheet" href="./../css/notes-dropdown.css">
     <style>
 
     </style>
@@ -50,6 +51,28 @@
         <!-----------------------------main-->
 
         <div class="himalstha-main-content" id="main-content">
+
+            <form id="class-subject-form">
+                <label for="class-select">Select a Class:</label>
+                <select id="class-select" name="class">
+                    <option value="11">Class 11</option>
+                    <option value="12">Class 12</option>
+                    <!-- Add more options for different classes as needed -->
+                </select>
+
+                <label for="subject-select">Select a Subject:</label>
+                <select id="subject-select" name="subject">
+                    <option value="physics">Physics</option>
+                    <option value="chemistry">Chemistry</option>
+                    <option value="math">Math</option>
+                    <option value="computer">Computer</option>
+                    <!-- Add more options for different subjects as needed -->
+                </select>
+
+                <input type="submit" value="Go">
+            </form>
+
+
             <h2 align="center">Choose Subject:</h2>
             <div class="navlinks-notes-container">
                 <ol>
@@ -94,7 +117,26 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="./../javascript/index.js"></script>
+    <script>
+        // Get the form element
+        let form = document.querySelector("#class-subject-form")
 
+        // Add a submit event listener to the form
+        form.addEventListener("submit", function (event) {
+            // Prevent the form from submitting
+            event.preventDefault()
+
+            // Get the selected class and subject values
+            let classValue = form.elements.class.value
+            let subjectValue = form.elements.subject.value
+
+            // Construct the URL of the appropriate page
+            let url = `notes/${subjectValue}/${classValue}-${subjectValue}-syllabus.html`
+
+            // Redirect the visitor to the appropriate page
+            window.location.href = url
+        })
+    </script>
 </body>
 
 </html>
