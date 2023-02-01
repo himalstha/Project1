@@ -1,0 +1,22 @@
+header-index
+{
+    background-color: red;
+}
+
+.paragraphofhome{
+    margin-top: 20px;
+align-items: center;
+}
+.paragraphofhome h2{
+    padding: 10px 20px;
+    font-size: 20px;
+    color: var(--primary-shades);
+    text-align: center;
+}
+.paragraphofhome p{
+font-size: 15px;
+padding: 10px 20px;
+text-align: center;
+letter-spacing: .5px;
+line-height: 30px;
+}

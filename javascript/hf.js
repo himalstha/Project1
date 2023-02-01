@@ -33,13 +33,27 @@ class faceLeft extends HTMLElement {
                 <a href="#">See More</a>
             </div>
             <div class="left-sidebar-shortcut-link">
-                <p>Your Shortcuts</p>
-                <a href="./../../../../../navlinks/notes/computer/c-programming.html"><img src="./../../../../../../notes/computer/c1.jpg" alt="">Grade 12
-                    C-programming Project</a>
-                <a href="./../../../../../../navlinks/notes/math/12-math-syllabus.html"><img src="./../../../../../img/chemistry.jpg" alt="">Grade 12 Math
-                    syllabus</a>
-                <a href="./../../../../../navlinks/notes/physics/12-physics-syllabus.html"><img src="./../../../../../notes/physics/ac-generator.jpg"
-                        alt="">Grade 12 Physics syllabus</a>
+                <p class="shortcuttitle">Your Shortcuts</p>
+                <div class="listofrecentpost">
+                    <ol>
+                        <li><a href="./../../../../../navlinks/notes/physics/11-physics-syllabus.html">Grade 11 Physics Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/chemistry/11-chemistry-syllabus.html">Grade 11 Chemistry Syllabus NEB</a>
+                        </li>
+                        <li><a href="./../../../../../navlinks/notes/math/11-math-syllabus.html">Grade 11 Math Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/nepali/11-nepali-syllabus.html">Grade 11 Nepali Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/english/11-english-syllabus.html">Grade 11 English Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/computer/11-computer-syllabus.html">Grade 11 Computer Syllabus NEB</a></li>
+                        <a href=""></a>
+                        <li><a href="./../../../../../navlinks/notes/physics/12-physics-syllabus.html">Grade 12 Physics Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/chemistry/12-chemistry-syllabus.html">Grade 12 Chemistry Syllabus NEB</a>
+                        </li>
+                        <li><a href="./../../../../../navlinks/notes/math/12-math-syllabus.html">Grade 12 Math Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/nepali/12-nepali-syllabus.html">Grade 12 Nepali Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/english/12-english-syllabus.html">Grade 12 English Syllabus NEB</a></li>
+                        <li><a href="./../../../../../navlinks/notes/computer/12-computer-syllabus.html">Grade 12 Computer Syllabus NEB</a></li>
+                    </ol>
+                </div>
+                
             </div>
     `;
   }
@@ -52,6 +66,7 @@ class faceRight extends HTMLElement {
     <div class="right-sidebar-title">
                 <h4>Recent Posts</h4><a href="#">See more</a>
             </div>
+            
             <div class="right-sidebar-title">
                 <h4>Up Comming Events</h4><a href="#">See more</a>
             </div>
