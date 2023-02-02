@@ -18,8 +18,8 @@
     <style>
         .page {
             font-family: Arial, sans-serif;
-            padding: 0;
-            margin: 0;
+            padding: 10px;
+            margin: 5rem;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -28,9 +28,9 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background-color: #f9f9f9;
+            background-color: var(--white);
             padding: 30px;
-            box-shadow: 0px 0px 10px #ccc;
+            box-shadow: 0px 0px 10px var(--primary-shades);
         }
 
         .profile-picture {
@@ -39,7 +39,7 @@
             border-radius: 50%;
             margin: 0 auto;
             display: block;
-            box-shadow: 0px 0px 10px #ccc;
+            box-shadow: 0px 0px 10px var(--primary-shades);
             transition: transform 0.3s ease-in-out;
             object-fit: cover;
         }
@@ -52,25 +52,25 @@
             text-align: center;
             font-size: 36px;
             margin-top: 50px;
-            text-shadow: 2px 2px #ccc;
+            text-shadow: 2px 2px var(--bg-color);
         }
 
         .page h2 {
             text-align: center;
             font-size: 22px;
-            text-shadow: 2px 2px #ccc;
+            text-shadow: 2px 2px var(--bg-color);
         }
 
         .page h3 {
             margin-top: 50px;
             text-align: center;
             font-size: 20px;
-            text-shadow: 2px 2px #ccc;
+            text-shadow: 2px 2px var(--bg-color);
         }
 
         .page h4 {
             font-size: 19px;
-            text-shadow: 2px 2px #ccc;
+            text-shadow: 2px 2px var(--bg-color);
         }
 
         .page p {
@@ -84,6 +84,7 @@
             font-size: 18px;
             padding: 1px 2px;
             list-style: circle;
+            color: var(--primary-shades);
         }
 
         .social-links {
@@ -99,7 +100,7 @@
             height: 40px;
             margin-right: 10px;
             border-radius: 50%;
-            background-color: #ccc;
+            background-color: var(--bg-color);
             text-align: center;
             line-height: 40px;
             font-size: 24px;
@@ -122,7 +123,11 @@
 
         .social-links a:hover {
             background-color: #333;
-            color: #fff;
+            color: var(--bg-color);
+        }
+
+        li {
+            color: ;
         }
     </style>
 </head>

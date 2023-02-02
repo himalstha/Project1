@@ -1647,7 +1647,7 @@ color: var(--link-color);
 .bbg-center .bbg-btns button {
   height: 55px;
   width: 170px;
-  border-radius: 5px;
+  border-radius: 25px;
   border: none;
   margin: 0 10px;
   border: 2px solid var(--white);
@@ -1659,21 +1659,14 @@ color: var(--link-color);
   transition: all 0.3s ease;
 }
 
-.bbg-center .bbg-btns button:first-child {
-  color: var(--white);
-  background: none;
+.bbg-center .bbg-btns button {
+  background: var(--containerListBg);
 }
 
-.bbg-btns button:first-child:hover {
-  background: var(--white);
-  color: var(--primary-shades);
+.bbg-center .bbg-btns button:hover{
+  scale: 1.05;
+  background-color: var(--white);
 }
-
-.bbg-center .bbg-btns button:last-child {
-  background: var(--white);
-  color: var(--primary-shades);
-}
-
 
 .listofrecentpost{
   height: 40vh;
