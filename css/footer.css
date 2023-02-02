@@ -16,6 +16,8 @@
     --containerListBg: rgb(58, 50, 50);
     --containerBgText: rgb(255, 255, 255);
     --containerListBgText: rgb(255, 255, 255);
+    --link-color: rgb(98, 106, 255);
+        --link-color-hover: rgb(69, 255, 137);
 }
 .footer-distributed {
     background:var(--white);

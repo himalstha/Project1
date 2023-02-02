@@ -25,7 +25,9 @@ html {
   --containerBgText: rgb(9, 13, 14);
   --containerListBgText: rgb(33, 28, 28);
   --link-color: rgb(0, 150, 55);
+    --link-color-hover: rgb(0, 13, 255);
 }
+
 body {
   background-color:var(--bg-color);
 }
@@ -62,9 +64,11 @@ body {
 a {
   text-decoration: none;
   display: inline-block;
-  color: var(--primary-shades);
+  color: var(--link-color);
 }
-
+a:hover{
+  color: var(--link-color-hover);
+}
 img {
   display: inline-block;
   width: 100%;
@@ -962,7 +966,6 @@ border: 3px solid var(--helper-color);    }
   flex-wrap: wrap;
   justify-content: center;
   align-self: center;
-  cursor: pointer;
   min-width: 320px;
 }
 .navlinks-syllabus-container a{
@@ -970,8 +973,9 @@ border: 3px solid var(--helper-color);    }
 }
 
 .navlinks-syllabus-container ol {
+  padding: 0 10px;
+  border: 1px solid var(--primary-shades);
   margin-top: 10px;
-  box-shadow: 1px 1px 5px black;
   width: 100%;
   min-width: 320px;
 }
@@ -981,8 +985,12 @@ border: 3px solid var(--helper-color);    }
   display: flex;
   justify-content: space-around;
   box-shadow: none;
+  border: none;
+  text-align: center;
 }
-
+.navlinks-syllabus-container ol:first-child li{
+ text-align: center;
+}
 .navlinks-syllabus-container ol li {
   padding: 10px 20px;
   font-size: 20px;
@@ -998,34 +1006,24 @@ border: 3px solid var(--helper-color);    }
   }
 }
 
-.navlinks-syllabus-container ol li:nth-child(even) {
-  background-color: var(--containerBg);
+.navlinks-syllabus-container ol li{
+  padding-left: 15px;
 }
 
-.navlinks-syllabus-container ol li:nth-child(even) a {
-  color: var(--containerBgText);
-}
 
-.navlinks-syllabus-container ol li:nth-child(odd) {
-  background-color: var(--containerListBg);
-}
-
-.navlinks-syllabus-container ol li:nth-child(odd) a {
-  color: var(--containerListBgText);
-}
 
 .navlinks-syllabus-container ol li:first-child {
+  padding-left: 0px;
   font-weight: 600;
-  background-color: var(--primary-color);
-  color: var(--white);
+  color: var(--primary-shades);
 }
 
 .navlinks-syllabus-container ol li:first-child a {
-  color: var(--white);
+  color: var(--primary-shades);
 }
 
 .navlinks-syllabus-container ol li:hover {
-  background-color: #80849c;
+  background-color:var(--containerBg);
 }
 
 .navlinks-syllabus-container ol li a:hover {
@@ -1037,6 +1035,7 @@ border: 3px solid var(--helper-color);    }
   color: white;
   min-width: 320px;
   text-align: center;
+padding: 10px 20px;
 
 }
 
@@ -1123,8 +1122,6 @@ line-height: 30px;
 .paragraphaboutsyllabus{
   margin-top: 30px;
   margin-bottom: 20px;
-  background-color: var(--containerListBg);
-  box-shadow:0 0 5px var(--para-color);
   padding-bottom: 20px;
 }
 .paragraphaboutsyllabus h2{
@@ -1132,7 +1129,7 @@ line-height: 30px;
 }
 
 .paragraphaboutsyllabus p{
-  padding: 8px 30px;
+  padding: 8px 0px;
   text-align: justify;
   font-size: 15px;
   letter-spacing: 1px;
@@ -1144,9 +1141,8 @@ line-height: 30px;
   width: 100%;
   text-align: center;
   font-size: 20px;
-color: var(--white) ;
+color: var(--primary-shades) ;
 font-weight: 500;
-  background-image: linear-gradient(to top, var(--primary-color), var(--helper-color));
 }
 /* -------------------------
 facebook clone
