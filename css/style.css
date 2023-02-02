@@ -77,8 +77,8 @@ li {
 h1,
 h2,
 h3,
-h4 {
-  color: var(--primary-color);
+h4,p {
+  color: var(--primary-shades);
 }
 
 .para {
@@ -1151,7 +1151,36 @@ font-weight: 500;
 /* -------------------------
 facebook clone
 ------------------------*/
-
+.gallary-format{
+  width: 100%;
+  columns:5 ;
+  column-gap: 15px;
+  padding: 15px;
+}
+.gallary-format img {
+  background-color: #80849c;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  transition: .3s;
+    box-shadow: 0 0 5px var(--para-color);
+}
+.gallary-format img:hover{
+  filter: grayscale(.5);
+  cursor: pointer;
+  scale: 1.01;
+  box-shadow: 0 0 1px var(--para-color);
+}
+@media(max-width:1200px){
+  .gallary-format{
+    columns: 4;
+  }
+}
+@media(max-width:450px) {
+  .gallary-format {
+    columns: 2;
+  }
+}
 
 .himalstha-main-container {
   display: flex;

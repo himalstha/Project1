@@ -4,8 +4,12 @@ header-index
 }
 
 .paragraphofhome{
+    width: 100%;
+        margin-left: 50%;
+        max-width: 1000px;
     margin-top: 20px;
 align-items: center;
+transform:translateX(-50%);
 }
 .paragraphofhome h2{
     padding: 10px 20px;
@@ -14,9 +18,24 @@ align-items: center;
     text-align: center;
 }
 .paragraphofhome p{
+    margin: 1rem;
 font-size: 15px;
 padding: 10px 20px;
 text-align: center;
 letter-spacing: .5px;
 line-height: 30px;
+}
+
+.paragraphofhome img{
+    margin: 10px 20px;
+    float: right;
+    width: 50rem;
+    height: 30rem;
+}
+@media(max-width:980px) {
+    .paragraphofhome img{
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+    }
 }

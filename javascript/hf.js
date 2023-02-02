@@ -13,6 +13,7 @@ himalstha<span>.com.np</span></a>
         <li><a href="./../../../../../index.html" class="navbar-link">home</a></li>
         <li><a href="./../../../../../navlinks/notes.html" class="navbar-link"> E-Notes </a></li>
         <li><a href="./../../../../../navlinks/news.html" class="navbar-link"> News </a></li>
+        <li><a href="./../../../../../navlinks/image.html" class="navbar-link"> Images </a></li>
         <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
         <li><a href="./../../../../../navlinks/aboutme.html" class="navbar-link"> About me </a></li>
      </ul>
@@ -126,11 +127,11 @@ class MyFooter extends HTMLElement {
     <div class="footer-right">
       <div class="footer-icons">
         <a href="" onclick="window.open('http://www.facebook.com/share.php?u=' + 
-                encodeURIComponent(location.href))">
+                encodeURIComponent(location.href))" target="_blank">
                 <ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="http://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
-        <a href="http://www.pinterest.com/"><ion-icon name="logo-pinterest"></ion-icon></a>
-        <a href="http://www.call-outline.com/"><ion-icon name="call-outline"></ion-icon></i></a>
+        <a href="https://www.youtube.com/@Himalshresthax" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+        <a href="https://www.pinterest.com/himalshresthx/" target="_blank"><ion-icon name="logo-pinterest"></ion-icon></a>
+        <a href="./../../../../../navlinks/contact.html" target="_blank"><ion-icon name="call-outline"></ion-icon></i></a>
       </div>
     </div>
     <div class="termsCondition"><a href="./../../../../termsCondition.html">Terms</a><a href="./../../../../privacyPolicy.html">Privacy and Policy</a><a href="./../../../../cookies.html

@@ -172,6 +172,7 @@
 }
 
 .footer-distributed .footer-icons a {
+    padding: 2.5px;
     font-size: 15px;
     display: inline-block;
     width: 35px;
