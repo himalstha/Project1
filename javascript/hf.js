@@ -15,6 +15,7 @@ himalstha<span>.com.np</span></a>
         <li><a href="./../../../../../navlinks/news.html" class="navbar-link"> News </a></li>
         <li><a href="./../../../../../navlinks/image.html" class="navbar-link"> Images </a></li>
         <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
+        <li><a href="./../../../../../navlinks/ai.html" class="navbar-link">AI</a></li>
         <li><a href="./../../../../../navlinks/aboutme.html" class="navbar-link"> About me </a></li>
      </ul>
     </nav>    
@@ -135,7 +136,7 @@ class MyFooter extends HTMLElement {
       </div>
     </div>
     <div class="termsCondition"><a href="./../../../../termsCondition.html">Terms</a><a href="./../../../../privacyPolicy.html">Privacy and Policy</a><a href="./../../../../cookies.html
-        ">Cookies</a><a href="advertising.html">Advertising</a><a>himalstha.com.np © 2023</a></div>
+        ">Cookies</a><a href="./../../../../advertising.html">Advertising</a><a>himalstha.com.np © 2023</a></div>
   </footer>
 
   

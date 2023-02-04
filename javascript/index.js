@@ -120,5 +120,22 @@ function showRightSidebar() {
 
 
 
+        // Get the form element
+        let form = document.querySelector("#class-subject-form")
 
+        // Add a submit event listener to the form
+        form.addEventListener("submit", function (event) {
+            // Prevent the form from submitting
+            event.preventDefault()
+
+            // Get the selected class and subject values
+            let classValue = form.elements.class.value
+            let subjectValue = form.elements.subject.value
+
+            // Construct the URL of the appropriate page
+            let url = `./../../../../navlinks/notes/${subjectValue}/${classValue}-${subjectValue}-syllabus.html`
+
+            // Redirect the visitor to the appropriate page
+            window.location.href = url
+        })
 
