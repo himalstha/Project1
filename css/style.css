@@ -1144,6 +1144,23 @@ line-height: 30px;
 color: var(--primary-shades) ;
 font-weight: 500;
 }
+.paragraphofexercises{
+  padding: 20px;
+  overflow-x: hidden;
+  text-align: justify;
+  text-align: left;
+  background:#fff;
+}
+.paragraphofexercises p{
+  color: rgb(0, 4, 65);
+  padding: ;
+}
+.paragraphofexercises table{
+background: white;
+}
+.table-overflow-x-scroll{
+  overflow-x: scroll;
+}
      .paragraphinai {
        text-align: justify;
        margin-top: 30px;
