@@ -970,8 +970,24 @@ border: 3px solid var(--helper-color);    }
 }
 .navlinks-syllabus-container a{
   width: 100%;
+  color: var(--primary-shades);
 }
-
+.navlinks-syllabus-container a:hover{
+  color: var(--primary-color);
+}
+.notes{
+  font-size: 15px;
+  line-height: 30px;
+}
+.notes strong{
+  font-size: 17px;
+}
+.notes p{
+  padding: 10px 0;
+}
+.notes li{
+  list-style-type: disc;
+}
 .navlinks-syllabus-container ol {
   padding: 0 10px;
   border: 1px solid var(--primary-shades);
