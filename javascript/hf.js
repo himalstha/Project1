@@ -16,6 +16,7 @@ himalstha<span>.com.np</span></a>
         <li><a href="./../../../../../navlinks/image.html" class="navbar-link"> Images </a></li>
         <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
         <li><a href="./../../../../../navlinks/ai.html" class="navbar-link">AI</a></li>
+        <li><a href="./../../../../../navlinks/todolist.html" class="navbar-link">To Do list</a></li>
         <li><a href="./../../../../../navlinks/aboutme.html" class="navbar-link"> About me </a></li>
      </ul>
     </nav>    
@@ -75,6 +76,7 @@ class faceRight extends HTMLElement {
             <div class="right-sidebar-event">
              <a href="./../../../../navlinks/physics/12-physics-syllabus.html>Grade 12 Physics</li>
             </div>
+            
             
     `;
   }
