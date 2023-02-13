@@ -2024,18 +2024,18 @@ img.portfolio-img2 {
       text-align: right;
       height: 100vh;
       padding: 10px;
-      backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
     }
 
 
     .navbar .navbar-link {
       color: var(--primary-shades);
+      text-shadow: 0px 0px 5px var(--white);
     }
 
     .mobile-navbar-btn {
       display: block;
       z-index: 999;
-    
     }
 
     .active .navbar {
