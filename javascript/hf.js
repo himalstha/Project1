@@ -12,12 +12,7 @@ himalstha<span>.com.np</span></a>
         <li><ion-icon name="moon-outline" class="fas"></ion-icon></li>
         <li><a href="./../../../../../index.html" class="navbar-link">home</a></li>
         <li><a href="./../../../../../navlinks/notes.html" class="navbar-link"> E-Notes </a></li>
-        <li><a href="./../../../../../navlinks/news.html" class="navbar-link"> News </a></li>
-        <li><a href="./../../../../../navlinks/image.html" class="navbar-link"> Images </a></li>
-        <li><a href="./../../../../../navlinks/contact.html" class="navbar-link"> Contact </a></li>
-        <li><a href="./../../../../../navlinks/ai.html" class="navbar-link">AI</a></li>
-        <li><a href="./../../../../../navlinks/todolist.html" class="navbar-link">To Do list</a></li>
-        <li><a href="./../../../../../navlinks/aboutme.html" class="navbar-link"> About me </a></li>
+        <li><a href="./../../../../../setquestion/grade-12-set-questions.html" class="navbar-link"> Grade 12 set questions</a></li>
      </ul>
     </nav>    
     `;
